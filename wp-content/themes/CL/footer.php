@@ -22,6 +22,7 @@
 <?php wp_footer(); ?>
 
 <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/masonry.pkgd.min.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/app.js"></script>
 	
 </body>
