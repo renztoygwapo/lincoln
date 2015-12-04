@@ -13,7 +13,7 @@
 <div id="map-wrapper">
 	<div id="map"></div>
 	<div class="box-content">
-		<h2 class="box-heading">Château Lincoln</h2>
+		<h1 class="box-heading">Château Lincoln</h1>
 
 		<p>Location d’appartements meublés (Bail Mensuel) et non-meublés (Bail Annuel) 1 ½ (Studio), 2 ½ (Alcôve), 3 ½ (1 Chambre à coucher), 4 ½ (2 Chambres à coucher)</p>
 		<p>Situé au Centre-Ville de Montréal, entre les rues Sainte-Catherine, Sherbrooke, Atwater et Guy, notre immeuble est bien connu de la clientèle universitaire de Concordia et McGill ainsi que des professionnels du monde des affaires. Nos tarifs de location sont parmi les plus compétitifs à Montréal, compte-tenu de notre localisation, de la qualité de nos appartements et de notre service courtois.</p>
