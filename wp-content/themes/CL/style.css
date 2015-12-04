@@ -1,0 +1,212 @@
+/*
+Theme Name:         CL
+Description:        CL is a versatile HTML5 responsive WordPress framework based on ZURB's Foundation.
+Version:            5.5.3
+Author:             Codespark
+*/
+
+/* -------------------------------------------------- 
+GENERAL
+-------------------------------------------------- */
+@font-face {
+    font-family: 'Martel';
+    src: url('fonts/martel-light-webfont.eot');
+    src: url('fonts/martel-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/martel-light-webfont.woff2') format('woff2'),
+         url('fonts/martel-light-webfont.woff') format('woff'),
+         url('fonts/martel-light-webfont.ttf') format('truetype'),
+         url('fonts/martel-light-webfont.svg#Martel') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+.row{
+	max-width: 1170px;
+}
+.button{
+	font-family: 'Roboto Condensed', sans-serif;
+	background-color: #ede9cf;
+    border-color: #ede9cf;
+    color: #1e2025;
+    text-transform: uppercase;
+}
+.button:hover, .button:focus,
+button:hover, button:focus{
+	background-color: #ede9cf;
+    border-color: #ede9cf;
+    color: #1e2025;
+}
+/* -------------------------------------------------- 
+HEADER
+-------------------------------------------------- */
+body > header{
+	background: rgba(52,56,65,.95);
+	height: 128px;
+}
+.header-wrap{
+	max-width: 1170px;
+}
+.top-bar-section ul li > a{
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 13px;
+	color: #ede9cf;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	padding: 0 19px !important;
+}
+#logo{
+	padding: 47px 0;
+}
+.language-select{
+	position: relative;
+	float: right;
+	padding-left: 15px;
+    margin-left: 15px;
+}
+.language-select:before{
+	position: absolute;
+    content: "|";
+    color: #222;
+    left: -11px;
+}
+.language-select span{
+	color: #ede9cf;
+	font-size: 13px;
+	font-family: 'Roboto Condensed', sans-serif;
+	line-height: 128px;
+    height: 128px;
+    display: block;
+}
+/* -------------------------------------------------- 
+CAROUSEL
+-------------------------------------------------- */
+.owl-carousel .owl-controls .owl-nav .owl-prev{
+	position: absolute;
+	background: url('img/prev-chevron.jpg') no-repeat;
+    height: 50px;
+    width: 50px;
+    left: 0;
+    bottom: 0;
+}
+.owl-carousel .owl-controls .owl-nav .owl-next{
+	position: absolute;
+	background: url('img/next-chevron.jpg') no-repeat;
+    height: 50px;
+    width: 50px;
+    left: 50px;
+    bottom: 0;
+}
+/* -------------------------------------------------- 
+MAP
+-------------------------------------------------- */
+#map-wrapper{
+	position: relative;
+	min-height: 530px;
+}
+#map { 
+  height: 100%; 
+  width: 100%; 
+  position:absolute; 
+  top: 0; 
+  left: 0; 
+  z-index: 0;
+}
+/* -------------------------------------------------- 
+BOX CONTENT
+-------------------------------------------------- */
+.box-content{
+	float: right;
+	max-width: 718px;
+	width: 100%;
+	z-index: 1;
+	position: relative;
+	padding: 138px 130px 124px;
+	background: #fff;
+	margin-top: -350px;
+}
+.box-content h1.box-heading{
+	font-size: 35px;
+	color: #1e2025;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+    margin-bottom: 50px;
+    letter-spacing: 3px;
+}
+.box-content p{
+	font-family: 'Martel', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+}
+.box-content .button{
+	margin-top: 50px;
+	margin-bottom: 0px;
+}
+/* -------------------------------------------------- 
+FOOTER
+-------------------------------------------------- */
+body > footer{
+    min-height: 128px;
+    background: #343841;
+    padding: 36px 0;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+body > footer *{
+	font-family: 'Martel';
+	font-weight: 300;
+	font-size: 12px;
+	color: #ede9cf;
+}
+body > footer .footer-inner{
+	margin-top: 24px;
+	max-width: 1170px;
+}
+body > footer .poweredby{
+	float: right;
+}
+/* -------------------------------------------------- 
+MEDIA QUERIES
+-------------------------------------------------- */
+@media only screen {
+
+}
+@media only screen and (min-width: 40.063em) {
+	body > header{
+		position: fixed;
+		width: 100%;
+		z-index: 999;
+	}
+	.top-bar{
+		height: 128px;
+    	line-height: 128px;
+	}
+	.top-bar, .top-bar-section ul li, .top-bar-section li:not(.has-form) a:not(.button){
+		background: transparent;
+	}
+	.top-bar-section > ul > .divider, .top-bar-section > ul > [role="separator"]{
+		display: none;
+	}
+	.top-bar-section li:not(.has-form) a:not(.button){
+		line-height: 128px;
+		height: 128px;
+	}
+	.top-bar-section ul li:hover:not(.has-form) > a{
+		background: none !important;
+	}
+	.top-bar-section ul li > a{
+		position: relative;
+	}
+	.top-bar-section ul li:hover:not(.has-form) > a:before{
+		position: absolute;
+		content: "";
+		width: 100%;
+		top: 0;
+		left: 0;
+		border-top: 2px solid #fff;
+	}
+
+}
+@media only screen and (min-width: 64.063em) {
+
+}
