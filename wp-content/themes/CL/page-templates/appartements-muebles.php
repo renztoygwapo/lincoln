@@ -393,8 +393,9 @@ get_header(); ?>
 
 
 <div id="contact">
+	<div class="wrapper">
 
-
+	</div>
 </div>
 
 <?php endwhile; ?> 
