@@ -246,6 +246,7 @@ ACCORDION
 	line-height: 60px;
 	display: block;
 	height: 60px;
+	outline: none;
 }
 .accordion .accordion-navigation > .content .top-menu ul.right li.active a{
 	border-bottom: 3px solid #474c55;
@@ -412,6 +413,12 @@ ICONS
 	width: 16px;
 	display: inline-block;
 }
+.chambre{
+	background: url(img/icons/chambre.png) no-repeat;
+	height: 20px;
+	width: 28px;
+	display: inline-block;
+}
 /* -------------------------------------------------- 
 GALLERY
 -------------------------------------------------- */
@@ -475,6 +482,14 @@ REDIRECTION
     overflow: hidden;
     clear: both;
     padding: 50px 20px;
+}
+
+/* -------------------------------------------------- 
+CONTACT
+-------------------------------------------------- */
+#contact{
+	background: #ede9cf;
+	padding: 50px 0;
 }
 /* -------------------------------------------------- 
 FOOTER

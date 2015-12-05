@@ -19,6 +19,12 @@ jQuery(document).ready(function($){
 	    navigationText : ''
 	});
 
+	$('#appartements-accordion .accordion-navigation').each(function(){
+		$(this).removeClass('active');
+	});
+	
+	$('#appartements-accordion .accordion-navigation').first().addClass('active');
+
 });
 
 
