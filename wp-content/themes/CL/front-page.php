@@ -2,7 +2,7 @@
 
 <div id="slider">
 
-	<div class="owl-carousel">
+	<div class="owl-carousel home-carousel">
     	<div class="item"><img src="<?php bloginfo('template_url'); ?>/img/slide1.jpg"></div>
     	<div class="item"><img src="<?php bloginfo('template_url'); ?>/img/slide1.jpg"></div>
 	</div>

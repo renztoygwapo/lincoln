@@ -2,13 +2,21 @@ jQuery(document).ready(function($){
 
 	$(document).foundation();
 
-	$('.owl-carousel').owlCarousel({
-	    items:1,
-	    margin:0,
-	    autoHeight:true,
-	    loop: true,
-	    nav: true,
-	    navText: ''
+	$('.home-carousel').owlCarousel({
+	    autoPlay : 3000,
+	    stopOnHover : true,
+	    navigation:true,
+	    singleItem : true,
+	    autoHeight : true,
+	    navigationText : ''
+	});
+
+	$('.accordion-carousel').owlCarousel({
+	    stopOnHover : true,
+	    navigation:true,
+	    singleItem : true,
+	    autoHeight : true,
+	    navigationText : ''
 	});
 
 });
