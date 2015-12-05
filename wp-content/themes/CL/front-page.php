@@ -12,15 +12,19 @@
 
 <div id="map-wrapper">
 	<div id="map"></div>
-	<div class="box-content">
-		<h1 class="box-heading">Château Lincoln</h1>
+    <div class="container">
+        <div class="box">
+        	<div class="box-content">
+        		<h1 class="box-heading">Château Lincoln</h1>
 
-		<p>Location d’appartements meublés (Bail Mensuel) et non-meublés (Bail Annuel) 1 ½ (Studio), 2 ½ (Alcôve), 3 ½ (1 Chambre à coucher), 4 ½ (2 Chambres à coucher)</p>
-		<p>Situé au Centre-Ville de Montréal, entre les rues Sainte-Catherine, Sherbrooke, Atwater et Guy, notre immeuble est bien connu de la clientèle universitaire de Concordia et McGill ainsi que des professionnels du monde des affaires. Nos tarifs de location sont parmi les plus compétitifs à Montréal, compte-tenu de notre localisation, de la qualité de nos appartements et de notre service courtois.</p>
-		<p>Bienvenue aux nouveaux arrivants à la recherche d’un premier pied-à-terre ou d’une adresse permanente au cœur de la ville de Montréal.</p>
+        		<p>Location d’appartements meublés (Bail Mensuel) et non-meublés (Bail Annuel) 1 ½ (Studio), 2 ½ (Alcôve), 3 ½ (1 Chambre à coucher), 4 ½ (2 Chambres à coucher)</p>
+        		<p>Situé au Centre-Ville de Montréal, entre les rues Sainte-Catherine, Sherbrooke, Atwater et Guy, notre immeuble est bien connu de la clientèle universitaire de Concordia et McGill ainsi que des professionnels du monde des affaires. Nos tarifs de location sont parmi les plus compétitifs à Montréal, compte-tenu de notre localisation, de la qualité de nos appartements et de notre service courtois.</p>
+        		<p>Bienvenue aux nouveaux arrivants à la recherche d’un premier pied-à-terre ou d’une adresse permanente au cœur de la ville de Montréal.</p>
 
-		<a href="#" class="button">Commencez votre visite</a>
-	</div>
+        		<a href="#" class="button">Commencez votre visite</a>
+        	</div>
+        </div>
+    </div>
 </div>
 
 
@@ -31,7 +35,73 @@
 var position = [27.1959739, 78.02423269999997];
  
 function showGoogleMaps() {
- 
+    
+
+    // Create an array of styles.
+  var styles = [
+      {
+        "featureType": "administrative",
+        "stylers": [
+          { "visibility": "off" }
+        ]
+      },{
+        "featureType": "landscape",
+        "elementType": "geometry",
+        "stylers": [
+          { "color": "#f6f5eb" }
+        ]
+      },{
+        "featureType": "poi",
+        "elementType": "labels",
+        "stylers": [
+          { "visibility": "off" }
+        ]
+      },{
+        "featureType": "poi",
+        "elementType": "geometry",
+        "stylers": [
+          { "color": "#ede9cf" }
+        ]
+      },{
+        "featureType": "road",
+        "elementType": "geometry",
+        "stylers": [
+          { "visibility": "simplified" },
+          { "color": "#ffffff" }
+        ]
+      },{
+        "featureType": "road",
+        "elementType": "labels.text",
+        "stylers": [
+          { "visibility": "simplified" },
+          { "color": "#5e646e" }
+        ]
+      },{
+        "featureType": "transit.line",
+        "elementType": "geometry",
+        "stylers": [
+          { "color": "#9fa4ad" }
+        ]
+      },{
+        "featureType": "transit.station",
+        "elementType": "labels.text",
+        "stylers": [
+          { "visibility": "simplified" },
+          { "color": "#9fa4ad" }
+        ]
+      },{
+        "featureType": "water",
+        "elementType": "geometry",
+        "stylers": [
+          { "color": "#9fa4ad" }
+        ]
+      },{
+      }
+    ];
+
+    var styledMap = new google.maps.StyledMapType(styles,
+    {name: "Styled Map"});
+
     var latLng = new google.maps.LatLng(position[0], position[1]);
  
     var mapOptions = {
@@ -55,6 +125,10 @@ function showGoogleMaps() {
         animation: google.maps.Animation.DROP,
         icon: myIcon
     });
+
+    //Associate the styled map with the MapTypeId and set it to display.
+      map.mapTypes.set('map_style', styledMap);
+      map.setMapTypeId('map_style');
 }
 google.maps.event.addDomListener(window, 'load', showGoogleMaps);
 </script>

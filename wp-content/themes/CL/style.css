@@ -19,8 +19,15 @@ GENERAL
     font-weight: 300;
     font-style: normal;
 }
+.container{
+	max-width: 1440px;
+	margin: 0 auto;
+}
 .row{
 	max-width: 1170px;
+}
+.nopadding{
+	padding: 0px !important;
 }
 .button{
 	font-family: 'Roboto Condensed', sans-serif;
@@ -45,14 +52,7 @@ body > header{
 .header-wrap{
 	max-width: 1170px;
 }
-.top-bar-section ul li > a{
-	font-family: 'Roboto Condensed', sans-serif;
-	font-size: 13px;
-	color: #ede9cf;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	padding: 0 19px !important;
-}
+
 #logo{
 	padding: 47px 0;
 }
@@ -79,6 +79,10 @@ body > header{
 /* -------------------------------------------------- 
 CAROUSEL
 -------------------------------------------------- */
+#slider{
+	height: 830px;
+	overflow: hidden;
+}
 .owl-carousel .owl-controls .owl-nav .owl-prev{
 	position: absolute;
 	background: url('img/prev-chevron.jpg') no-repeat;
@@ -113,15 +117,18 @@ MAP
 /* -------------------------------------------------- 
 BOX CONTENT
 -------------------------------------------------- */
-.box-content{
+.box{
+	width: 50%;
 	float: right;
-	max-width: 718px;
-	width: 100%;
-	z-index: 1;
-	position: relative;
-	padding: 138px 130px 124px;
 	background: #fff;
 	margin-top: -350px;
+	position: relative;
+	z-index: 1;
+}
+.box-content{
+	max-width: 450px;
+    margin: 0 auto;
+    padding: 125px 40px;
 }
 .box-content h1.box-heading{
 	font-size: 35px;
@@ -142,6 +149,68 @@ BOX CONTENT
 	margin-bottom: 0px;
 }
 /* -------------------------------------------------- 
+CONTAINER
+-------------------------------------------------- */
+.content{
+	min-height: 500px;
+}
+
+/* -------------------------------------------------- 
+ICONS
+-------------------------------------------------- */
+.arrow-down{
+	background: url(img/icons/arrow-down.png) no-repeat;
+	height: 20px;
+	width: 9px;
+	display: inline-block;
+}
+/* -------------------------------------------------- 
+GALLERY
+-------------------------------------------------- */
+#featured-image{
+	background-size: cover;
+	min-height: 700px;
+	background-repeat: no-repeat;
+}
+#gallery{
+	margin-top: -350px;
+}
+#gallery .gallery-item{
+	background: #fff;
+}
+#gallery .gallery-item .gallery-caption{
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 125px 40px;
+}
+#gallery .gallery-item .gallery-caption h1.heading{
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 35px;
+	color: #000;
+	font-weight: 700;
+	text-transform: uppercase;
+	line-height: 1.1;
+	margin-bottom: 80px;
+	letter-spacing: 3px;
+}
+#gallery .gallery-item .gallery-caption p{
+	font-family: 'Martel', sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+}
+#gallery .gallery-item .arrow-down{
+	margin-top: 5px;
+}
+/* -------------------------------------------------- 
+REDIRECTION
+-------------------------------------------------- */
+#appartements-bottom{
+	background: #474c55;
+    overflow: hidden;
+    clear: both;
+    padding: 50px 20px;
+}
+/* -------------------------------------------------- 
 FOOTER
 -------------------------------------------------- */
 body > footer{
@@ -151,6 +220,7 @@ body > footer{
     overflow: hidden;
     position: relative;
     z-index: 1;
+    clear: both;
 }
 body > footer *{
 	font-family: 'Martel';
@@ -181,30 +251,47 @@ MEDIA QUERIES
 		height: 128px;
     	line-height: 128px;
 	}
+	.top-bar-section > ul > li{
+		padding: 0 19px;
+	}
+	.top-bar-section ul li > a{
+		font-family: 'Roboto Condensed', sans-serif;
+		font-size: 13px;
+		color: #ede9cf;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		padding: 0 !important;
+	}
 	.top-bar, .top-bar-section ul li, .top-bar-section li:not(.has-form) a:not(.button){
 		background: transparent;
 	}
 	.top-bar-section > ul > .divider, .top-bar-section > ul > [role="separator"]{
 		display: none;
 	}
-	.top-bar-section li:not(.has-form) a:not(.button){
+	.top-bar-section li:not(.has-form) a:not(.button), .top-bar-section li.active:not(.has-form) a:not(.button){
 		line-height: 128px;
 		height: 128px;
 	}
-	.top-bar-section ul li:hover:not(.has-form) > a{
+	.top-bar-section li.active:not(.has-form) a:not(.button){
+		background: none;
+		color: #ede9cf;
+	}
+	.top-bar-section ul li:hover:not(.has-form) > a, .top-bar-section li.active:not(.has-form) a:not(.button):hover{
 		background: none !important;
+		color: #ede9cf;
 	}
 	.top-bar-section ul li > a{
 		position: relative;
 	}
-	.top-bar-section ul li:hover:not(.has-form) > a:before{
+	.top-bar-section ul li:hover:not(.has-form) > a:before, .top-bar-section li.active:not(.has-form) a:not(.button):before{
 		position: absolute;
 		content: "";
 		width: 100%;
 		top: 0;
 		left: 0;
-		border-top: 2px solid #fff;
+		border-top: 2px solid #ede9cf;;
 	}
+
 
 }
 @media only screen and (min-width: 64.063em) {
