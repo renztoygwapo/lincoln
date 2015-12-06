@@ -394,10 +394,25 @@ get_header(); ?>
 
 <div id="contact">
 	<div class="wrapper">
-
+		<div class="large-12 columns">
+			<div class="section-title">Formulaire de location</div>
+			<div class="intro">
+				<p>Veuillez compléter le formulaire ci-joint et l’envoyer, nous confirmerons la disponibilité et le tarif par courriel dès que possible.</p>
+			</div>
+		</div>
+		<?php echo do_shortcode('[gravityform id="1" title="false" description="false"]'); ?>
 	</div>
 </div>
-
+<div class="container">
+	<div id="appartements-bottom">
+		<div class="medium-6 columns">
+			<a href="#"><img src="<?php bloginfo('template_url'); ?>/img/appartement3.jpg"></a>
+		</div>
+		<div class="medium-6 columns">
+			<a href="#"><img src="<?php bloginfo('template_url'); ?>/img/appartement2.jpg"></a>
+		</div>
+	</div>
+</div>
 <?php endwhile; ?> 
 
 <?php get_footer(); ?>
