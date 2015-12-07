@@ -57,12 +57,10 @@ HEADER
 -------------------------------------------------- */
 
 .header-wrap{
-	max-width: 1170px;
+	max-width: 1440px;
+    padding: 0 50px;
 }
 
-#logo{
-	padding: 47px 0;
-}
 .language-select{
 	position: relative;
 	float: right;
@@ -74,6 +72,8 @@ HEADER
     content: "|";
     color: #222;
     left: -11px;
+    top: 50%;
+    margin-top: -24.5px;
 }
 .language-select span{
 	color: #ede9cf;
@@ -82,6 +82,15 @@ HEADER
 	line-height: 128px;
     height: 128px;
     display: block;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+body > header.smaller .language-select span{
+	line-height: 75px;
+    height: 75px;
 }
 /* -------------------------------------------------- 
 CAROUSEL
@@ -136,7 +145,7 @@ MAP
 -------------------------------------------------- */
 #map-wrapper{
 	position: relative;
-	min-height: 590px;
+	min-height: 574px;
 }
 #map { 
   height: 100%; 
@@ -173,6 +182,7 @@ BOX CONTENT
 	text-transform: uppercase;
     margin-bottom: 50px;
     letter-spacing: 3px;
+    line-height: 1.1
 }
 .box-content p{
 	font-family: 'Martel', sans-serif;
@@ -182,6 +192,7 @@ BOX CONTENT
 .box-content .button{
 	margin-top: 50px;
 	margin-bottom: 0px;
+	font-size: 13px;
 }
 /* -------------------------------------------------- 
 MAIN
@@ -195,9 +206,11 @@ BOX CONTENT
 .section{
 	padding: 100px 0;
 }
+
 /* -------------------------------------------------- 
 ACCORDION
 -------------------------------------------------- */
+
 .accordion{
 	border: 1px solid #ede9cf;
 }
@@ -438,8 +451,15 @@ ICONS
 /* -------------------------------------------------- 
 GALLERY
 -------------------------------------------------- */
+.gallery-banner{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center bottom;
+	height: 830px;
+}
 #gallery{
 	margin-top: -350px;
+	overflow: hidden;
 }
 #gallery .gallery-item{
 	background: #fff;
@@ -471,7 +491,7 @@ GALLERY
 APPARTEMENTS
 -------------------------------------------------- */
 #featured-image{
-	min-height: 563px;
+	min-height: 560px;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -582,7 +602,7 @@ CONTACT & GRAVITY FORMS
 	padding-left: 25px;
 	margin-left: 0px;
 	display:inline-block;
-	line-height:15px;
+	line-height: 20px;
 	background-repeat:no-repeat;
 	background-position: 0 0;
 	font-size:14px;
@@ -592,14 +612,9 @@ CONTACT & GRAVITY FORMS
 	font-family: 'Martel';
 	font-weight: 300;
 }
-#contact .gform_wrapper input[type=radio] + label {
-	background-position: 0 0px;
-}
-#contact .gform_wrapper input[type=radio]:checked + label {
-	background-position: 0 -15px;
-}
+
 #contact .gform_wrapper .gfield_radio label {
-	background-image:url(img/radio-sprite.png);
+	background-image:url(img/radio-unselected.png);
 	background-repeat: no-repeat;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
@@ -607,6 +622,9 @@ CONTACT & GRAVITY FORMS
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
+}
+#contact .gform_wrapper input[type=radio]:checked + label {
+	background-image:url(img/radio-selected.png);
 }
 #contact .separator{
 	border-bottom: 1px solid #e0dcc3;
@@ -738,8 +756,8 @@ CONTACT & GRAVITY FORMS
 }
 .page-template-contact ul#tab li{
 	display: inline-block;
-	padding: 0px 14px;
-	height: 47px;
+	padding: 0px 20px;
+	height: 50px;
 }
 .page-template-contact ul#tab li a{
 	font-size: 12px;
@@ -749,7 +767,7 @@ CONTACT & GRAVITY FORMS
 	font-weight: normal;
 	position: relative;
 	bottom: 0px;
-	line-height: 47px;
+	line-height: 50px;
 	display: block;
 }
 .page-template-contact ul#tab li.active a{
@@ -775,10 +793,25 @@ body > footer *{
 }
 body > footer .footer-inner{
 	margin-top: 24px;
-	max-width: 1170px;
+	max-width: 1440px;
+    padding: 0 50px;
+}
+body > footer .copyright ul{
+	margin: 0;
+	list-style: none;
+}
+body > footer .copyright ul li{
+	float: left;
+	margin-right: 4px;
+}
+body > footer .copyright ul li span{
+	margin-right: 4px;
 }
 body > footer .poweredby{
 	float: right;
+}
+body > footer .poweredby span{
+	margin-right: 4px;
 }
 /* -------------------------------------------------- 
 MEDIA QUERIES
@@ -788,15 +821,282 @@ MEDIA QUERIES
 FOR MOBILE ONLY
 -------------------------------------------------- */
 @media only screen and (max-width: 640px) { 
-
-}
-
-
-/* -------------------------------------------------- 
-FOR TABLET ONLY
--------------------------------------------------- */
-@media only screen and (min-width: 641px) and (max-width: 1025px) { 
-
+	.top-bar{
+		background: rgba(52,56,65,.95);
+		position: fixed;
+		width: 100%;
+		z-index: 999;
+		-webkit-transition: height 0.3s;
+	    -moz-transition: height 0.3s;
+	    -ms-transition: height 0.3s;
+	    -o-transition: height 0.3s;
+	    transition: height 0.3s;
+	}
+	.top-bar, .top-bar .name{
+		height: 80px;
+		line-height: 80px;
+	}
+	.top-bar .title-area{
+		padding: 0 40px;
+	}
+	.top-bar .toggle-topbar{
+		right: 25px;
+	}
+	.top-bar .toggle-topbar.menu-icon a span::after{
+		box-shadow: 0 0 0 1px #ede9cf, 0 7px 0 1px #ede9cf, 0 14px 0 1px #ede9cf;
+	}
+	.top-bar-section ul li{
+		background: rgba(52,56,65,.95);
+	}
+	.top-bar-section ul li > a{
+		color: #ede9cf;
+		text-transform: uppercase;
+		font-family: 'Roboto Condensed';
+		padding: 12px 40px;
+	}
+	.top-bar-section .divider, .top-bar-section [role="separator"]{
+		border-top: solid 1px #333;
+	}
+	.top-bar-section ul li.active > a, .top-bar-section ul li.active > a:hover, .top-bar-section ul li:hover:not(.has-form) > a{
+		background: #5e5e5e;
+		color: #ede9cf;
+	}
+	.top-bar.expanded .title-area{
+		background: rgba(52,56,65,.95);
+	}
+	#slider .item, .gallery-banner{
+		height: 338px;
+	}
+	#gallery{
+		margin-top: 0px;
+	}
+	#logo{
+		height: 28px;
+	}
+	.box-content, #gallery .gallery-item .gallery-caption{
+		padding: 60px 40px;
+		width: 100%;
+		max-width: 100%;
+	}
+	.box-content p, #gallery .gallery-item .gallery-caption p{
+		font-size: 14px;
+	}
+	#gallery .gallery-item .gallery-caption h1.heading, .box-content h1.box-heading{
+		font-size: 30px;
+		margin-bottom: 40px;
+	}
+	#map-wrapper .box{
+		width: 100%;
+		margin: 0px;
+	}
+	#map{
+		position: relative;
+		height: 220px;
+	}
+	#appartements-bottom{
+		padding: 20px 0 0;
+	}
+	#appartements-bottom .item{
+		margin-bottom: 20px;
+	}
+	#featured-image{
+		min-height: 340px;
+	}
+	#featured-image h1.featured-title{
+		margin-top: 0px;
+		font-size: 30px;
+		line-height: 1.2;
+	}
+	#appartements-accordion{
+		margin: 0 20px;
+	}
+	#appartements-accordion .accordion-navigation > a, .accordion dd > a{
+		padding: 10px 15px;
+		height: 56px;
+	}
+	#appartements-accordion .accordion-navigation ul.labels{
+		width: 100%;
+    	height: 40px;
+	}
+	#appartements-accordion .accordion-navigation ul.labels li.fraction{
+		width: 75px;
+		margin: 0;
+   		padding: 0;
+   		float: left;
+	}
+	#appartements-accordion .accordion-navigation ul.labels li:nth-child(2){
+		width: 120px;
+		min-width: 0px;
+		padding-right: 0px;
+		margin-right: 0;
+		text-align: center;
+    	line-height: 1.2;
+    	display: table-cell;
+    	font-size: 14px;
+	}
+	#appartements-accordion .accordion-navigation ul.labels li:last-child{
+		display: none;
+	}
+	#appartements-accordion .accordion-navigation .toggle{
+		right: 30px;
+	}
+	#appartements-accordion .accordion-navigation > .content .top-menu{
+		padding: 0 18px;
+	}
+	.accordion .accordion-navigation > .content .top-menu ul.left li{
+		margin-right: 10px;
+	}
+	#appartements-accordion .accordion-navigation > .content .top-menu ul.left li span{
+		display: none;
+	}
+	#appartements-accordion .accordion-navigation > .content .content-inner{
+		padding: 5px;
+	}
+	.accordion .accordion-navigation > .content .content-inner .details ul li{
+		margin-bottom: 30px;
+	}
+	.accordion .accordion-navigation > .content .content-inner .details ul li label{
+		font-size: 15px;
+	}
+	.accordion .accordion-navigation > .content .content-inner .details ul li h3{
+		font-size: 22px;
+	}
+	.accordion .accordion-navigation > .content .content-inner .additional-content h4{
+		font-size: 15px;
+	}
+	.accordion .accordion-navigation > .content .content-inner .additional-content *{
+		font-size: 14px;
+	}
+	.accordion .accordion-navigation > .content .content-inner .additional-content{
+		margin-top: 0px;
+	}
+	#appartements-accordion .accordion-navigation > .content .icons{
+		height: 60px;
+	    padding: 10px 18px;
+	    line-height: 60px;
+	    border-bottom: 1px solid #ede9cf;
+	}
+	#appartements-accordion .accordion-navigation > .content .icons .icon{
+		margin-right: 4px;
+	}
+	#appartements-accordion .accordion-navigation > .content .icons span{
+		margin-right: 14px;
+		font-size: 14px;
+		font-weight: 300;
+		font-family: 'Martel';
+	}
+	#contact{
+		padding: 50px 20px;
+	}
+	#contact .section-title{
+		font-size: 30px;
+	}
+	#contact .intro{
+		margin-bottom: 40px;
+	}
+	#contact .intro p{
+		font-size: 14px;
+	}
+	#contact .gform_wrapper input[type=radio] + label{
+		padding-left: 20px;
+	}
+	.gform_wrapper ul.gfield_checkbox li, .gform_wrapper ul.gfield_radio li{
+		margin-right: 6px;
+	}
+	#contact .gform_wrapper .gform_footer{
+		margin-top: 20px;
+	    float: none;
+	    padding: 0 15px;
+	    width: 100%
+	}
+	#contact .gform_wrapper .gform_footer input[type=submit]{
+		width: 100%;
+		margin-bottom: 0px;
+	}
+	#field_1_6.gfield_error,
+	#field_1_7.gfield_error,
+	#field_1_8.gfield_error,
+	#field_1_9.gfield_error,
+	#field_3_6.gfield_error,
+	#field_3_6.gfield_error,
+	#field_3_8.gfield_error,
+	#field_3_9.gfield_error,
+	#field_3_10.gfield_error{
+		width: 100% !important;
+		padding-left: 0.9375rem;
+	    padding-right: 0.9375rem;
+	}
+	#contact .gform_wrapper .top_label .gfield_error, #contact .gfield_captcha_input_container{
+		width: 100%;
+	}
+	#contact .gfield_captcha_input_container{
+		padding: 0;
+		margin-top: 10px;
+	}
+	.owl-carousel.accordion-carousel .owl-buttons{
+		max-width: 100px;
+	    margin: 20px auto 0px;
+	    overflow: hidden;
+	}
+	.owl-carousel.accordion-carousel .owl-controls .owl-prev{
+		position: relative;
+	    float: left;
+	    left: auto;
+	    right: auto;
+	}
+	.owl-carousel.accordion-carousel .owl-controls .owl-next{
+		position: relative;
+	    left: auto;
+	    right: auto;
+	    float: right;
+	}
+	#featured-image h1.featured-title{
+		padding: 0 30px;
+	}
+	.section{
+		padding: 50px 0;
+	}
+	#contact-map-wrapper{
+		height: 340px;
+	}
+	#contact-map-wrapper #map{
+		height: 100%;
+	}
+	.box.grey{
+		width: 100%;
+		margin-top: 0px;
+	}
+	.page-template-contact .gform_wrapper .gform_footer input[type=submit]{
+		width: 100%;
+	}
+	.page-template-contact .entry-content{
+		margin-top: 50px;
+		margin-bottom: 50px;
+    	padding: 0 20px;
+	}
+	.page-template-contact .entry-content strong, .page-template-contact .entry-content b{
+		font-size: 15px;
+	}
+	.page-template-contact .entry-content *{
+		font-size: 14px;
+	}
+	body > footer .copyright{
+		margin-bottom: 40px;
+	}
+	body > footer .copyright ul li{
+		display: block;
+		float: none;
+		margin-right: 0px;
+		margin-bottom: 10px;
+		text-align: center;
+	}
+	body > footer .copyright ul li span{
+		display: none;
+	}
+	body > footer .poweredby{
+		float: none;
+		text-align: center;
+	}
 }
 
 /* -------------------------------------------------- 
@@ -809,13 +1109,31 @@ FOR TABLET AND DESKTOP
 		position: fixed;
 		width: 100%;
 		z-index: 999;
+		-webkit-transition: height 0.3s;
+	    -moz-transition: height 0.3s;
+	    -ms-transition: height 0.3s;
+	    -o-transition: height 0.3s;
+	    transition: height 0.3s;
+	}
+	body > header.smaller{
+		height: auto;
+	}
+	#logo{
+		padding: 47px 0;
+		-webkit-transition: all 0.3s;
+	    -moz-transition: all 0.3s;
+	    -ms-transition: all 0.3s;
+	    -o-transition: all 0.3s;
+	    transition: all 0.3s;
+	}
+	body > header.smaller #logo{
+		padding: 20px 0;
 	}
 	.top-bar{
-		height: 128px;
-    	line-height: 128px;
+		height: auto;
 	}
 	.top-bar-section > ul > li{
-		padding: 0 19px;
+		padding: 0 10px;
 	}
 	.top-bar-section ul li > a{
 		font-family: 'Roboto Condensed', sans-serif;
@@ -834,6 +1152,16 @@ FOR TABLET AND DESKTOP
 	.top-bar-section li:not(.has-form) a:not(.button), .top-bar-section li.active:not(.has-form) a:not(.button){
 		line-height: 128px;
 		height: 128px;
+		-webkit-transition: all 0.3s;
+	    -moz-transition: all 0.3s;
+	    -ms-transition: all 0.3s;
+	    -o-transition: all 0.3s;
+	    transition: all 0.3s;
+	}
+	body > header.smaller .top-bar-section li:not(.has-form) a:not(.button),
+	body > header.smaller .top-bar-section li.active:not(.has-form) a:not(.button){
+		line-height: 75px;
+		height: 75px;
 	}
 	.top-bar-section li.active:not(.has-form) a:not(.button){
 		background: none;
@@ -855,11 +1183,162 @@ FOR TABLET AND DESKTOP
 		border-top: 2px solid #ede9cf;;
 	}
 
+}
+
+/* -------------------------------------------------- 
+FOR TABLET ONLY
+-------------------------------------------------- */
+@media only screen and (min-width: 641px) and (max-width: 1025px) { 
+	.top-bar-section > ul > li{
+		padding: 0 8px;
+	}
+	.gallery-banner{
+		height: 670px;
+	}
+	#featured-image{
+		min-height: 400px;
+	}
+	#contact-map-wrapper{
+		height: 670px;
+	}
+	#contact-map-wrapper #map{
+		height: 670px;
+	}
+	.box{
+		margin-top: -270px;
+	}
+	.box-content, #gallery .gallery-item .gallery-caption{
+		max-width: 384px;
+		padding: 50px 12px;
+	}
+	.box-content h1.box-heading, #gallery .gallery-item .gallery-caption h1.heading{
+		font-size: 30px;
+		margin-bottom: 60px;
+	}
+	.box-content p, #gallery .gallery-item .gallery-caption p{
+		font-size: 14px;
+	}
+	#slider .item{
+		height: 670px;
+	}
+	#map-wrapper{
+		min-height: 370px;
+	}
+	.box-content .button{
+		margin-top: 15px;
+	}
+	#gallery{
+		margin-top: -275px;
+	}
+	#gallery .grid-item.tablet{
+		margin-top: 275px !important
+	}
+	.section > .wrapper{
+		max-width: 840px;
+	}
+	.accordion .accordion-navigation > a, .accordion dd > a{
+		padding: 10px 30px;
+	}
+	.accordion .accordion-navigation .toggle{
+		right: 30px !important;
+	}
+	.accordion .accordion-navigation ul.labels li{
+		padding-right: 20px;
+    	margin-right: 20px;
+	}
+	.accordion .accordion-navigation ul.labels li:last-child{
+		padding: 0;
+		margin: 0px;
+	}
+	.accordion .accordion-navigation ul.labels li:nth-child(3) span{
+		margin-right: 20px;
+	}
+	.accordion .accordion-navigation > .content .content-inner .details ul li label{
+		font-size: 15px;
+	}
+	.accordion .accordion-navigation > .content .content-inner .details ul li h3{
+		font-size: 22px;
+	}
+	.accordion .accordion-navigation > .content .content-inner .additional-content{
+		margin-top: 0px;
+	}
+	.accordion .accordion-navigation > .content .content-inner .additional-content *{
+		font-size: 14px;
+	}
+	.accordion .accordion-navigation > .content .content-inner .additional-content h4{
+		font-size: 15px;
+	}
+	#contact > .wrapper{
+		max-width: 840px;
+	}
+	.page-template-contact .entry-content *{
+		font-size: 14px;
+	}
+	.page-template-contact .entry-content strong, .page-template-contact .entry-content b{
+		font-size: 15px;
+	}
+	.page-template-contact .entry-content{
+		margin-top: 50px;
+	}
+	.page-template-contact .wrapper.with-padding{
+		padding: 0 50px;
+	}
 
 }
+
 /* -------------------------------------------------- 
 FOR DESKTOP ONLY
 -------------------------------------------------- */
 @media only screen and (min-width: 1025px) {
 
+}
+
+@media only screen and (min-width: 641px) and (max-width: 992px) { 
+	body > header{
+		height: auto;
+	}
+	#logo {
+	    padding: 20px 0 10px;
+	    margin: 0 auto;
+	    display: block;
+	    text-align: center;
+	}
+	.top-bar{
+		display: inline-block;
+	}
+	.top-bar-section li:not(.has-form) a:not(.button), .top-bar-section li.active:not(.has-form) a:not(.button), .language-select span{
+		height: 50px;
+		line-height: 50px;
+		font-size: 12px;
+	}
+	.header-wrap{
+		padding: 0px;
+	}
+	.header-wrap .mini-tablet{
+		width: 100%;
+		text-align: center;
+	}
+
+}
+
+@media only screen and (max-width: 767px) { 
+	.box-content{
+		padding: 60px 40px;
+		width: 100%;
+		max-width: 100%;
+	}
+	.box-content h1.box-heading{
+		margin-bottom: 40px;
+	}
+	.box-content, #gallery .gallery-item .gallery-caption{
+		padding: 50px 40px;
+	}
+	#map-wrapper .box{
+		width: 100%;
+		margin: 0px;
+	}
+	#map{
+		position: relative;
+		height: 220px;
+	}
 }

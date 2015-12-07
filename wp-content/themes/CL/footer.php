@@ -2,17 +2,22 @@
 </div><!-- Container End -->
 
 <footer>
-	<div class="row footer-inner">
+	<div class="container footer-inner">
 		<div class="row">
-			<div class="medium-6 columns">
+			<div class="medium-8 columns">
 				<div class="copyright">
-					<span>&copy; <?php echo date('Y'); ?> Château Lincoln - Tous droit réservés - Termes - Confidentialité</span>
+					<ul>
+						<li>&copy; <?php echo date('Y'); ?> Château Lincoln</li>
+						<li><a href="#"><span>-</span>Tous droit réservés</a></li>
+						<li><a href="#"><span>-</span>Termes</a></li>
+						<li><a href="#"><span>-</span>Confidentialité</a></li>
+					</ul>
 				</div>
 			</div>
-			<div class="medium-6 columns">
+			<div class="medium-4 columns">
 				<div class="poweredby">
 					<span>Conception du site web par</span>
-					<img src="<?php bloginfo('template_url'); ?>/img/codespark.png">
+					<a href="http://www.codespark.ca/" target="_blank"><img src="<?php bloginfo('template_url'); ?>/img/codespark.png"></a>
 				</div>
 			</div>
 		</div>

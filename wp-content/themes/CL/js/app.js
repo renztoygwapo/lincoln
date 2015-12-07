@@ -25,7 +25,15 @@ jQuery(document).ready(function($){
 	
 	$('#appartements-accordion .accordion-navigation').first().addClass('active');
 
+	$(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+ 
+        if (scroll >= 128) {
+            $("body > header").addClass('smaller');
+        } else {
+            $("body > header").removeClass("smaller");
+        }
+    });
+
 });
-
-
 

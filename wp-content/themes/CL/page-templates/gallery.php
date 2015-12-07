@@ -2,7 +2,7 @@
 //Template Name: Gallery
 get_header(); ?>
 <div class="container">
-	<img src="<?php bloginfo('template_url'); ?>/img/gallery-banner.jpg">
+	<div class="gallery-banner" style="background-image: url(<?php bloginfo('template_url'); ?>/img/gallery-banner.jpg)"></div>
 </div>
 
 <div class="container">
@@ -19,7 +19,7 @@ get_header(); ?>
 				</div>
 			</div>
 		</div>
-		<div class="medium-6 columns nopadding grid-item" style="margin-top: 350px">
+		<div class="medium-6 columns nopadding grid-item hide-for-small-only tablet" style="margin-top: 350px">
 			<div class="gallery-item">
 				<img src="<?php bloginfo('template_url'); ?>/img/img1.jpg">
 			</div>
@@ -76,10 +76,14 @@ get_header(); ?>
 
 	<div id="appartements-bottom">
 		<div class="medium-6 columns">
-			<a href="/appartements-muebles/"><img src="<?php bloginfo('template_url'); ?>/img/appartement1.jpg"></a>
+			<div class="item">
+				<a href="<?php echo home_url(); ?>/appartements-muebles/"><img src="<?php bloginfo('template_url'); ?>/img/appartement1.jpg"></a>
+			</div>
 		</div>
 		<div class="medium-6 columns">
-			<a href="/appartements-non-muebles/"><img src="<?php bloginfo('template_url'); ?>/img/appartement2.jpg"></a>
+			<div class="item">
+				<a href="<?php echo home_url(); ?>/appartements-non-muebles/"><img src="<?php bloginfo('template_url'); ?>/img/appartement2.jpg"></a>
+			</div>
 		</div>
 	</div>
 </div>

@@ -51,10 +51,12 @@
 		<nav class="top-bar" data-topbar>
 		    <ul class="title-area">
 		        <li class="name">
-		        	<h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+		        	<div id="logo">
+						<a href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_url'); ?>/img/logo.png"></a>
+					</div>
 		        </li>
 				<!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-				<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+				<li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
 		    </ul>
 		    <section class="top-bar-section">
 		    <?php
@@ -77,15 +79,15 @@
 	</div>
 
 	<div class="show-for-medium-up">
-		<div class="row header-wrap">
+		<div class="container header-wrap">
 			<div class="row">
 				<!-- Starting the Top-Bar -->
-				<div class="medium-3 columns">
+				<div class="medium-3 columns mini-tablet">
 					<div id="logo">
 						<a href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_url'); ?>/img/logo.png"></a>
 					</div>
 				</div>
-				<div class="medium-9 columns">
+				<div class="medium-9 columns mini-tablet">
 					<nav class="top-bar" data-topbar>
 					    <section class="top-bar-section">
 

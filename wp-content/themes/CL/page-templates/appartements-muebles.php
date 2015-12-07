@@ -17,7 +17,7 @@ get_header(); ?>
 				    <ul class="labels">
 			    		<li class="fraction">1 ½</li>
 			    		<li>Rénové - Régulier</li>
-			    		<li>
+			    		<li class="hide-for-small-only">
 			    			<div class="salon icon"></div><span>1</span>
 			    			<div class="cuisine icon"></div><span>1</span>
 			    			<div class="bath-tub icon"></div><span>1</span>
@@ -26,10 +26,15 @@ get_header(); ?>
 			    	<div class="toggle"></div>
 			    </a>
 			    <div id="panel1" class="content active">
+			    	<div class="show-for-small-only icons">
+			    		<div class="salon icon"></div><span>1</span>
+		    			<div class="cuisine icon"></div><span>1</span>
+		    			<div class="bath-tub icon"></div><span>1</span>
+			    	</div>
 			    	<div class="top-menu">
 			    		<ul class="left">
-			    			<li><a href="#"><i class="mail icon"></i> Prendre contact</a></li>
-			    			<li><a href="#"><i class="arrow-down2 icon"></i> Télécharger la fiche</a></li>
+			    			<li><a href="#"><i class="mail icon"></i> <span>Prendre contact</span></a></li>
+			    			<li><a href="#"><i class="arrow-down2 icon"></i> <span>Télécharger la fiche</span></a></li>
 			    		</ul>
 			    		<ul class="right" data-tab>
 			    			<li class="active"><a href="#tab1">Rénové</a></li>
@@ -120,10 +125,15 @@ get_header(); ?>
 			    	<div class="toggle"></div>
 			    </a>
 			    <div id="panel2" class="content">
+			    	<div class="show-for-small-only icons">
+			    		<div class="salon icon"></div><span>1</span>
+		    			<div class="cuisine icon"></div><span>1</span>
+		    			<div class="bath-tub icon"></div><span>1</span>
+			    	</div>
 			    	<div class="top-menu">
 			    		<ul class="left">
-			    			<li><a href="#"><i class="mail icon"></i> Prendre contact</a></li>
-			    			<li><a href="#"><i class="arrow-down2 icon"></i> Télécharger la fiche</a></li>
+			    			<li><a href="#"><i class="mail icon"></i> <span>Prendre contact</span></a></li>
+			    			<li><a href="#"><i class="arrow-down2 icon"></i> <span>Télécharger la fiche</span></a></li>
 			    		</ul>
 			    		<ul class="right" data-tab>
 			    			<li class="active"><a href="#tab3">Rénové</a></li>
@@ -214,10 +224,16 @@ get_header(); ?>
 			    	<div class="toggle"></div>
 			    </a>
 			    <div id="panel3" class="content">
+			    	<div class="show-for-small-only icons">
+			    		<div class="chambre icon"></div><span>1</span>
+			    		<div class="salon icon"></div><span>1</span>
+		    			<div class="cuisine icon"></div><span>1</span>
+		    			<div class="bath-tub icon"></div><span>1</span>
+			    	</div>
 			    	<div class="top-menu">
 			    		<ul class="left">
-			    			<li><a href="#"><i class="mail icon"></i> Prendre contact</a></li>
-			    			<li><a href="#"><i class="arrow-down2 icon"></i> Télécharger la fiche</a></li>
+			    			<li><a href="#"><i class="mail icon"></i> <span>Prendre contact</span></a></li>
+			    			<li><a href="#"><i class="arrow-down2 icon"></i> <span>Télécharger la fiche</span></a></li>
 			    		</ul>
 			    		<ul class="right" data-tab>
 			    			<li class="active"><a href="#tab5">Rénové</a></li>
@@ -308,10 +324,16 @@ get_header(); ?>
 			    	<div class="toggle"></div>
 			    </a>
 			    <div id="panel4" class="content">
+			    	<div class="show-for-small-only icons">
+			    		<div class="chambre icon"></div><span>1</span>
+			    		<div class="salon icon"></div><span>1</span>
+		    			<div class="cuisine icon"></div><span>1</span>
+		    			<div class="bath-tub icon"></div><span>1</span>
+			    	</div>
 			    	<div class="top-menu">
 			    		<ul class="left">
-			    			<li><a href="#"><i class="mail icon"></i> Prendre contact</a></li>
-			    			<li><a href="#"><i class="arrow-down2 icon"></i> Télécharger la fiche</a></li>
+			    			<li><a href="#"><i class="mail icon"></i> <span>Prendre contact</span></a></li>
+			    			<li><a href="#"><i class="arrow-down2 icon"></i> <span>Télécharger la fiche</span></a></li>
 			    		</ul>
 			    		<ul class="right" data-tab>
 			    			<li class="active"><a href="#tab7">Rénové</a></li>
@@ -405,11 +427,17 @@ get_header(); ?>
 </div>
 <div class="container">
 	<div id="appartements-bottom">
+		
 		<div class="medium-6 columns">
-			<a href="#"><img src="<?php bloginfo('template_url'); ?>/img/appartement3.jpg"></a>
+			<div class="item">
+				<a href="#"><img src="<?php bloginfo('template_url'); ?>/img/appartement3.jpg"></a>
+			</div>
 		</div>
+		
 		<div class="medium-6 columns">
-			<a href="#"><img src="<?php bloginfo('template_url'); ?>/img/appartement2.jpg"></a>
+			<div class="item">
+				<a href="#"><img src="<?php bloginfo('template_url'); ?>/img/appartement2.jpg"></a>
+			</div>
 		</div>
 	</div>
 </div>

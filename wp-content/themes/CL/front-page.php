@@ -11,7 +11,6 @@
 
 
 <div id="map-wrapper">
-	<div id="map"></div>
     <div class="container">
         <div class="box">
         	<div class="box-content">
@@ -25,6 +24,7 @@
         	</div>
         </div>
     </div>
+    <div id="map"></div>
 </div>
 
 
@@ -115,8 +115,15 @@ function showGoogleMaps() {
     map = new google.maps.Map(document.getElementById('map'),
         mapOptions);
  	
- 	//var myIcon = new google.maps.MarkerImage("<?php bloginfo('template_url'); ?>/img/map-marker.png", null, null, null, new google.maps.Size(50,59));
- 	var myIcon = new google.maps.MarkerImage("<?php bloginfo('template_url'); ?>/img/map-marker.png", new google.maps.Size(50, 59), null, new google.maps.Point(380, 60));
+ 	  if(jQuery(window).width() > 641 && jQuery(window).width() < 767){
+      var myIcon = new google.maps.MarkerImage("<?php bloginfo('template_url'); ?>/img/map-marker.png", new google.maps.Size(50, 59), null, new google.maps.Point(50, 40));
+    }
+    else if(jQuery(window).width() < 641){
+      var myIcon = new google.maps.MarkerImage("<?php bloginfo('template_url'); ?>/img/map-marker.png", new google.maps.Size(50, 59), null, new google.maps.Point(14, 40));
+    }else{
+      var myIcon = new google.maps.MarkerImage("<?php bloginfo('template_url'); ?>/img/map-marker.png", new google.maps.Size(50, 59), null, new google.maps.Point(380, 60));
+    }
+    
     // Show the default red marker at the location
     marker = new google.maps.Marker({
         position: latLng,

@@ -6,6 +6,12 @@ get_header(); ?>
 <div id="contact-map-wrapper">
   <div id="map"></div>
 </div>
+<div class="tab show-for-small-only text-center">
+  <ul id="tab">
+    <li class="active"><a href="#">Plan</a></li>
+    <li><a href="#">Métro</a></li>
+  </ul>
+</div>
 
 <div class="container">
     <div class="box grey">
@@ -14,7 +20,7 @@ get_header(); ?>
         <?php echo do_shortcode('[gravityform id="2" title="false" description="false"]'); ?>
     	</div>
     </div>
-    <div class="row">
+    <div class="wrapper with-padding">
       <div class="medium-6 columns end">
         <div class="entry-content">
           <div class="row">
@@ -30,7 +36,7 @@ get_header(); ?>
               <p>Tél :   514 931-7271 <br>
               Fax :  514 931-7272</p>
             </div>
-            <div class="medium-5 columns">
+            <div class="medium-5 columns hide-for-small-only">
               <ul id="tab">
                 <li class="active"><a href="#">Plan</a></li>
                 <li><a href="#">Métro</a></li>
@@ -129,8 +135,15 @@ function showGoogleMaps() {
     map = new google.maps.Map(document.getElementById('map'),
         mapOptions);
  	
- 
- 	var myIcon = new google.maps.MarkerImage("<?php bloginfo('template_url'); ?>/img/map-marker.png", new google.maps.Size(50, 59), null, new google.maps.Point(380, -50));
+  
+  if(jQuery(window).width() > 641 && jQuery(window).width() < 1025){
+      var myIcon = new google.maps.MarkerImage("<?php bloginfo('template_url'); ?>/img/map-marker.png", new google.maps.Size(50, 59), null, new google.maps.Point(200, -50));
+  }
+  else if(jQuery(window).width() < 641){
+    var myIcon = new google.maps.MarkerImage("<?php bloginfo('template_url'); ?>/img/map-marker.png", new google.maps.Size(50, 59), null, new google.maps.Point(14, 0));
+  }else{
+    var myIcon = new google.maps.MarkerImage("<?php bloginfo('template_url'); ?>/img/map-marker.png", new google.maps.Size(50, 59), null, new google.maps.Point(380, -50));
+  }
     // Show the default red marker at the location
     marker = new google.maps.Marker({
         position: latLng,
