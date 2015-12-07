@@ -776,10 +776,26 @@ body > footer .poweredby{
 /* -------------------------------------------------- 
 MEDIA QUERIES
 -------------------------------------------------- */
-@media only screen {
+
+/* -------------------------------------------------- 
+FOR MOBILE ONLY
+-------------------------------------------------- */
+@media only screen and (max-width: 640px) { 
 
 }
-@media only screen and (min-width: 40.063em) {
+
+
+/* -------------------------------------------------- 
+FOR TABLET ONLY
+-------------------------------------------------- */
+@media only screen and (min-width: 641px) and (max-width: 1025px) { 
+
+}
+
+/* -------------------------------------------------- 
+FOR TABLET AND DESKTOP
+-------------------------------------------------- */
+@media only screen and (min-width: 641px) {
 	body > header{
 		background: rgba(52,56,65,.95);
 		height: 128px;
@@ -834,6 +850,9 @@ MEDIA QUERIES
 
 
 }
-@media only screen and (min-width: 64.063em) {
+/* -------------------------------------------------- 
+FOR DESKTOP ONLY
+-------------------------------------------------- */
+@media only screen and (min-width: 1025px) {
 
 }
