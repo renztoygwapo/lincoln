@@ -76,10 +76,10 @@ get_header(); ?>
 
 	<div id="appartements-bottom">
 		<div class="medium-6 columns">
-			<a href="#"><img src="<?php bloginfo('template_url'); ?>/img/appartement1.jpg"></a>
+			<a href="/appartements-muebles/"><img src="<?php bloginfo('template_url'); ?>/img/appartement1.jpg"></a>
 		</div>
 		<div class="medium-6 columns">
-			<a href="#"><img src="<?php bloginfo('template_url'); ?>/img/appartement2.jpg"></a>
+			<a href="/appartements-non-muebles/"><img src="<?php bloginfo('template_url'); ?>/img/appartement2.jpg"></a>
 		</div>
 	</div>
 </div>
