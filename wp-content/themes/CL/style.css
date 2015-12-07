@@ -136,7 +136,7 @@ MAP
 -------------------------------------------------- */
 #map-wrapper{
 	position: relative;
-	min-height: 530px;
+	min-height: 590px;
 }
 #map { 
   height: 100%; 
