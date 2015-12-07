@@ -88,6 +88,13 @@ CAROUSEL
 -------------------------------------------------- */
 #slider{
 	overflow: hidden;
+	
+}
+#slider .item{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center bottom;
+	height: 830px;
 }
 .owl-carousel .owl-controls .owl-prev{
 	position: absolute;

@@ -3,8 +3,8 @@
 <div id="slider">
 
 	<div class="owl-carousel home-carousel">
-    	<div class="item"><img src="<?php bloginfo('template_url'); ?>/img/slide1.jpg"></div>
-    	<div class="item"><img src="<?php bloginfo('template_url'); ?>/img/slide1.jpg"></div>
+    	<div class="item" style="background-image :url(<?php bloginfo('template_url'); ?>/img/slide1.jpg)"></div>
+    	<div class="item" style="background-image :url(<?php bloginfo('template_url'); ?>/img/slide1.jpg)"></div>
 	</div>
 
 </div>
