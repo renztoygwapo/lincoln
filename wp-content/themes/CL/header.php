@@ -117,4 +117,4 @@
 </header>
 
 <!-- Start the main container -->
-<div class="content" role="document">
+<div class="main" role="document">
