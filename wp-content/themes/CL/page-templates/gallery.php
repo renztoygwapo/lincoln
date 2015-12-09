@@ -77,12 +77,14 @@ get_header(); ?>
 	<div id="appartements-bottom">
 		<div class="medium-6 columns">
 			<div class="item">
+				<h3 class="item-title">Appartements meublés</h3>
 				<a href="<?php echo home_url(); ?>/appartements-muebles/"><img src="<?php bloginfo('template_url'); ?>/img/appartement1.jpg"></a>
 			</div>
 		</div>
 		<div class="medium-6 columns">
 			<div class="item">
-				<a href="<?php echo home_url(); ?>/appartements-non-muebles/"><img src="<?php bloginfo('template_url'); ?>/img/appartement2.jpg"></a>
+				<h3 class="item-title">Appartements non meublés</h3>
+				<a href="<?php echo home_url(); ?>/appartements-non-muebles/"><img src="<?php bloginfo('template_url'); ?>/img/appartement3.jpg"></a>
 			</div>
 		</div>
 	</div>
