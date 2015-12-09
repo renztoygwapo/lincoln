@@ -3,7 +3,6 @@ jQuery(document).ready(function($){
 	$(document).foundation();
 
 	$('.home-carousel').owlCarousel({
-	    autoPlay : 3000,
 	    stopOnHover : true,
 	    navigation:true,
 	    singleItem : true,
@@ -34,6 +33,11 @@ jQuery(document).ready(function($){
             $("body > header").removeClass("smaller");
         }
     });
+
+	$('a[href^="#contact"]').click(function(){
+		$('html,body').animate({ scrollTop: $(this.hash).offset().top}, 800);
+		return false;
+	});
 
 });
 

@@ -20,7 +20,7 @@
         		<p>Situé au Centre-Ville de Montréal, entre les rues Sainte-Catherine, Sherbrooke, Atwater et Guy, notre immeuble est bien connu de la clientèle universitaire de Concordia et McGill ainsi que des professionnels du monde des affaires. Nos tarifs de location sont parmi les plus compétitifs à Montréal, compte-tenu de notre localisation, de la qualité de nos appartements et de notre service courtois.</p>
         		<p>Bienvenue aux nouveaux arrivants à la recherche d’un premier pied-à-terre ou d’une adresse permanente au cœur de la ville de Montréal.</p>
 
-        		<a href="#" class="button">Commencez votre visite</a>
+        		<a href="<?php echo home_url(); ?>/galerie-photos" class="button">Commencez votre visite</a>
         	</div>
         </div>
     </div>
@@ -106,10 +106,13 @@ function showGoogleMaps() {
  
     var mapOptions = {
         zoom: 16, // initialize zoom level - the max value is 21
-        streetViewControl: false, // hide the yellow Street View pegman
-        scaleControl: true, // allow users to zoom the Google Map
         mapTypeId: google.maps.MapTypeId.ROADMAP,
-        center: latLng
+        center: latLng,
+        zoomControl: false,
+        scaleControl: false,
+        scrollwheel: false,
+        disableDoubleClickZoom: true,
+        mapTypeControl: false
     };
  
     map = new google.maps.Map(document.getElementById('map'),

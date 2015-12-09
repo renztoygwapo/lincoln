@@ -6,7 +6,7 @@ get_header(); ?>
 </div>
 
 <div class="container">
-	<div id="gallery" class="js-masonry" data-masonry-options='{ "itemSelector": ".grid-item", "isOriginLeft": false  }'>
+	<div id="gallery">
 		
 		<div class="medium-6 columns nopadding grid-item">
 			<div class="gallery-item">
@@ -87,4 +87,17 @@ get_header(); ?>
 		</div>
 	</div>
 </div>
+<script type="text/javascript">
+	jQuery(document).ready(function($){
+		// init Masonry
+		var $grid = $('#gallery').masonry({
+		  	itemSelector: '.grid-item',
+  			isOriginLeft: false 
+		});
+		// layout Masonry after each image loads
+		$grid.imagesLoaded().progress( function() {
+		  $grid.masonry('layout');
+		});
+	})
+</script>
 <?php get_footer(); ?>

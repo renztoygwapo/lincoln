@@ -7,7 +7,7 @@
 			<div class="medium-8 columns">
 				<div class="copyright">
 					<ul>
-						<li>&copy; <?php echo date('Y'); ?> Château Lincoln</li>
+						<li><a href="<?php echo home_url(); ?>">&copy; <?php echo date('Y'); ?> Château Lincoln</a></li>
 						<li><a href="#"><span>-</span>Tous droit réservés</a></li>
 						<li><a href="#"><span>-</span>Termes</a></li>
 						<li><a href="#"><span>-</span>Confidentialité</a></li>
@@ -28,6 +28,7 @@
 
 <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/owl.carousel.min.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/masonry.pkgd.min.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/imagesloaded.pkgd.min.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/app.js"></script>
 	
 </body>

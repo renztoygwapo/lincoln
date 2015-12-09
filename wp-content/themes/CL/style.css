@@ -71,7 +71,7 @@ HEADER
 	position: absolute;
     content: "|";
     color: #222;
-    left: -11px;
+    left: -6px;
     top: 50%;
     margin-top: -24.5px;
 }
@@ -288,6 +288,7 @@ ACCORDION
 	margin-left: 0px;
 	margin-bottom: 0px;
 	display: inline-block;
+    width: 100%;
 }
 .accordion .accordion-navigation ul.labels li{
 	display: inline-block;
@@ -297,6 +298,7 @@ ACCORDION
     line-height: 37px;
     height: 37px;
     vertical-align: middle;
+    float: left;
 }
 .accordion .accordion-navigation ul.labels li.fraction{
 	font-size: 30px;
@@ -309,6 +311,7 @@ ACCORDION
 	font-size: 16px;
 	font-weight: 300;
 	min-width: 192px;
+	text-align: center;
 }
 .accordion .accordion-navigation ul.labels li .icon{
 	margin-right: 14px;
@@ -319,9 +322,13 @@ ACCORDION
 	font-family: 'Martel';
 	color: #1e2025;
 	margin-right: 50px;
+	position: relative;
+	top: -8px;
 }
 .accordion .accordion-navigation ul.labels li:last-child{
-	border: none;
+	width: 52%;
+    padding-right: 0;
+    margin-right: 0;
 }
 .accordion .accordion-navigation .toggle{
 	position: absolute;
@@ -380,6 +387,9 @@ ACCORDION
 	font-family: 'Martel';
 	font-weight: 300;
 	color: #343841;
+}
+.accordion .accordion-navigation > .content .content-inner .additional-content li{
+	font-size: 12px;
 }
 .accordion .accordion-navigation > .content .content-inner .additional-content h4{
 	font-size: 17px;
@@ -555,6 +565,7 @@ CONTACT & GRAVITY FORMS
 	text-transform: uppercase;
 	color: #474c55;
 	font-weight: normal !important;
+	letter-spacing: 1px;
 }
 .gform_wrapper .gfield_required{
 	color: #474c55 !important;
@@ -570,7 +581,7 @@ CONTACT & GRAVITY FORMS
 #contact .gform_wrapper .datepicker{
 	box-shadow: none;
     border: none;
-    padding: 20px 20px !important;
+    padding: 25px 20px !important;
     font-size: 14px !important;
     font-family: 'Martel' !important;
     font-weight: 300;
@@ -626,6 +637,52 @@ CONTACT & GRAVITY FORMS
 #contact .gform_wrapper input[type=radio]:checked + label {
 	background-image:url(img/radio-selected.png);
 }
+
+
+
+#contact .gform_wrapper input[type=checkbox] {
+	position:absolute; 
+	z-index:-1000; 
+	left:-1000px; 
+	overflow: hidden; 
+	clip: rect(0 0 0 0); 
+	height:1px; 
+	width:1px; 
+	margin:-1px; 
+	padding:0; 
+	border:0;
+}
+
+#contact .gform_wrapper input[type=checkbox] + label {
+	padding-left: 25px;
+	margin-left: 0px;
+	display:inline-block;
+	line-height: 20px;
+	background-repeat:no-repeat;
+	background-position: 0 0;
+	font-size:14px;
+	vertical-align:middle;
+	cursor:pointer;
+	color: #474c55;
+	font-family: 'Martel';
+	font-weight: 300;
+}
+
+#contact .gform_wrapper .gfield_checkbox label {
+	background-image:url(img/radio-unselected.png);
+	background-repeat: no-repeat;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+#contact .gform_wrapper input[type=checkbox]:checked + label {
+	background-image:url(img/radio-selected.png);
+}
+
+
 #contact .separator{
 	border-bottom: 1px solid #e0dcc3;
 	margin-top: 30px;
@@ -635,11 +692,12 @@ CONTACT & GRAVITY FORMS
 	width: 50%;
     float: left;
     padding-right: 0.9375rem;
+    padding-top: 0px;
 }
 #contact .gfield_captcha_input_container input[type="text"]{
 	box-shadow: none;
     border: none;
-    padding: 20px 20px;
+    padding: 25px 20px;
     font-size: 14px;
     font-family: 'Martel';
     font-weight: 300;
@@ -696,13 +754,13 @@ CONTACT & GRAVITY FORMS
     margin-bottom: 4px;
 }
 #contact .gform_wrapper .gfield_captcha_container img.gfield_captcha{
-	height: 48px;
+	height: 51px;
 }
 #contact .gform_wrapper .gform_footer{
 	display: inline-block;
     float: right;
     margin: 0;
-    margin-top: -80px;
+    margin-top: -69px;
     margin-right: 15px;
 }
 #contact .gform_wrapper .gform_footer input[type=submit]{
@@ -717,6 +775,12 @@ CONTACT & GRAVITY FORMS
 }
 #contact-map-wrapper{
 	height: 828px;
+}
+#contact-map-wrapper #subway{
+	background: url('img/map-subway.jpg') no-repeat left bottom;
+	background-size: cover;
+	height: 828px;
+	display: none;
 }
 #contact-map-wrapper #map{
 	position: relative;
@@ -773,6 +837,10 @@ CONTACT & GRAVITY FORMS
 .page-template-contact ul#tab li.active a{
 	border-bottom: 2px solid #8c8e8d;
 }
+.gform_wrapper textarea.large{
+	padding: 14px 20px !important;
+}
+
 /* -------------------------------------------------- 
 FOOTER
 -------------------------------------------------- */
@@ -853,6 +921,7 @@ FOR MOBILE ONLY
 		text-transform: uppercase;
 		font-family: 'Roboto Condensed';
 		padding: 12px 40px;
+		text-align: center;
 	}
 	.top-bar-section .divider, .top-bar-section [role="separator"]{
 		border-top: solid 1px #333;
@@ -933,6 +1002,11 @@ FOR MOBILE ONLY
     	line-height: 1.2;
     	display: table-cell;
     	font-size: 14px;
+    	padding: 5px 6px;
+    	float: none;
+	}
+	#appartements-accordion .accordion-navigation ul.labels li:nth-child(2) span{
+		display: none;
 	}
 	#appartements-accordion .accordion-navigation ul.labels li:last-child{
 		display: none;
@@ -1012,6 +1086,7 @@ FOR MOBILE ONLY
 	#contact .gform_wrapper .gform_footer input[type=submit]{
 		width: 100%;
 		margin-bottom: 0px;
+		margin-top: 30px;
 	}
 	#field_1_6.gfield_error,
 	#field_1_7.gfield_error,
@@ -1026,8 +1101,21 @@ FOR MOBILE ONLY
 		padding-left: 0.9375rem;
 	    padding-right: 0.9375rem;
 	}
+	#field_3_12, #field_1_12{
+		height: 154px;
+	}
 	#contact .gform_wrapper .top_label .gfield_error, #contact .gfield_captcha_input_container{
 		width: 100%;
+	}
+	#contact .gform_wrapper .gfield_captcha_container img.gfield_captcha{
+		height: 51px;
+	    display: block;
+	    text-align: center;
+	    margin: 0 auto !important;
+	    position: absolute;
+	    bottom: 0;
+	    right: 0;
+	    left: 0;
 	}
 	#contact .gfield_captcha_input_container{
 		padding: 0;
@@ -1093,9 +1181,15 @@ FOR MOBILE ONLY
 	body > footer .copyright ul li span{
 		display: none;
 	}
+	body > footer .footer-inner{
+		padding: 0 10px;
+	}
 	body > footer .poweredby{
 		float: none;
 		text-align: center;
+	}
+	body > footer *{
+		font-size: 11px;
 	}
 }
 
@@ -1181,6 +1275,9 @@ FOR TABLET AND DESKTOP
 		top: 0;
 		left: 0;
 		border-top: 2px solid #ede9cf;;
+	}
+	#contact .gform_wrapper .gfield_captcha_container img.gfield_captcha{
+		margin-left: 16px !important;
 	}
 
 }
@@ -1271,6 +1368,7 @@ FOR TABLET ONLY
 	#contact > .wrapper{
 		max-width: 840px;
 	}
+
 	.page-template-contact .entry-content *{
 		font-size: 14px;
 	}
@@ -1290,7 +1388,14 @@ FOR TABLET ONLY
 FOR DESKTOP ONLY
 -------------------------------------------------- */
 @media only screen and (min-width: 1025px) {
-
+	.accordion .accordion-navigation > .content .content-inner .additional-content .content-left{
+		padding-right: 60px;
+	}
+	.page-template-contact .box-content{
+		max-width: 495px;
+		box-sizing: content-box;
+	    padding: 125px 0px 125px 50px;
+	}
 }
 
 @media only screen and (min-width: 641px) and (max-width: 992px) { 

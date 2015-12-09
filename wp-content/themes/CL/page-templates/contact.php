@@ -5,6 +5,7 @@ get_header(); ?>
 
 <div id="contact-map-wrapper">
   <div id="map"></div>
+  <div id="subway"></div>
 </div>
 <div class="tab show-for-small-only text-center">
   <ul id="tab">
@@ -20,12 +21,12 @@ get_header(); ?>
         <?php echo do_shortcode('[gravityform id="2" title="false" description="false"]'); ?>
     	</div>
     </div>
-    <div class="wrapper with-padding">
+    <div class="row">
       <div class="medium-6 columns end">
         <div class="entry-content">
           <div class="row">
             <div class="medium-7 columns">
-              <p><strong>950 Avenue Lincoln, Suite 100 <br> 
+              <p><strong>1950 Avenue Lincoln, Suite 100 <br> 
               Montréal, QC H3H 2N8</strong></p>
 
               <p>Lundi au Vendredi : 9h - 17h <br> 
@@ -126,10 +127,13 @@ function showGoogleMaps() {
  
     var mapOptions = {
         zoom: 16, // initialize zoom level - the max value is 21
-        streetViewControl: false, // hide the yellow Street View pegman
-        scaleControl: true, // allow users to zoom the Google Map
         mapTypeId: google.maps.MapTypeId.ROADMAP,
-        center: latLng
+        center: latLng,
+        zoomControl: false,
+        scaleControl: false,
+        scrollwheel: false,
+        disableDoubleClickZoom: true,
+        mapTypeControl: false
     };
  
     map = new google.maps.Map(document.getElementById('map'),
