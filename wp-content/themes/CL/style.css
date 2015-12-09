@@ -530,7 +530,22 @@ REDIRECTION
     clear: both;
     padding: 50px 20px;
 }
-
+#appartements-bottom .item{
+	position: relative;
+}
+#appartements-bottom .item h3.item-title{
+	position: absolute;
+	font-family: 'Martel';
+	font-weight: 700;
+    color: #fff;
+    font-size: 24px;
+    top: 50%;
+    text-align: center;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin-top: -15px;
+}
 /* -------------------------------------------------- 
 CONTACT & GRAVITY FORMS
 -------------------------------------------------- */
@@ -985,6 +1000,9 @@ FOR MOBILE ONLY
 	#appartements-bottom .item{
 		margin-bottom: 20px;
 	}
+	#appartements-bottom .item h3.item-title{
+		font-size: 22px;
+	}
 	#featured-image{
 		min-height: 340px;
 	}
@@ -1244,7 +1262,7 @@ FOR TABLET AND DESKTOP
 		height: auto;
 	}
 	.top-bar-section > ul > li{
-		padding: 0 17px;
+		padding: 0 15.5px;
 	}
 	.top-bar-section ul li > a{
 		font-family: 'Roboto Condensed', sans-serif;
@@ -1398,7 +1416,9 @@ FOR TABLET ONLY
 	.page-template-contact .wrapper.with-padding{
 		padding: 0 50px;
 	}
-
+	#appartements-bottom .item h3.item-title{
+		font-size: 22px;
+	}
 }
 
 /* -------------------------------------------------- 

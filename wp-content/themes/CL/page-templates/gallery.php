@@ -11,7 +11,7 @@ get_header(); ?>
 		<div class="medium-6 columns nopadding grid-item">
 			<div class="gallery-item">
 				<div class="gallery-caption">
-					<h1 class="heading">La tranquillité au cœur du Centre-Ville de Montréal</h1>
+					<h1 class="heading">La tranquillité au cœur du Centre-Ville de Montréal!</h1>
 
 					<p>Situé sur une rue paisible du Centre-Ville de Montréal, notre édifice résidentiel est à proximité des institutions financières, universitaires et artistiques. Tout en étant un havre de paix dans un voisinage paisible, vous serez à deux pas des stations de métro (Guy-Concordia et Atwater), universités (Concordia et McGill), grands magasins, théâtres, musés, restaurants, lieux touristiques, etc. C’est l’endroit idéal pour qui veut joindre confort, travail, études et plaisir.</p>
 
@@ -47,7 +47,7 @@ get_header(); ?>
 		<div class="medium-6 columns nopadding grid-item">
 			<div class="gallery-item">
 				<div class="gallery-caption">
-					<p>Nous hébergeons une clientèle internationale de gens d’affaires, d’étudiants, de nouveaux arrivants et de professionnels relocalisés temporairement. Tous y apprécient le style de vie actif du Centre-ville de Montréal à deux pas de la quiétude de leur appartement.</p>
+					<p>Nous hébergeons une clientèle internationale de gens d’affaires, d’étudiants, de nouveaux arrivants et de professionnels relocalisés temporairement. Tous y apprécient le style de vie actif du Centre-ville de Montréal  à deux pas de la quiétude de leur appartement.</p>
 				</div>
 			</div>
 		</div>

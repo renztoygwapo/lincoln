@@ -83,15 +83,15 @@ get_header(); ?>
 			    		<div class="additional-content">
 				    		<div class="medium-8 columns content-left">
 				    			
-			    				<h4>Inclus dans le prix du loyer :</h4>
+			    				<h4>Inclus dans le prix du loyer:</h4>
 			    				<ul>
-			    					<li><p>Tous nos appartements meublés ont été récemment entièrement	rénovés : cuisine et salle de bains refaits de fond en comble avec	comptoirs de marbre, planchers de bois flottants, meubles neufs très modernes. Voyez notre galerie de photo pour un bref aperçu.</p></li>
+			    					<li><p>Tous nos appartements meublés ont été récemment entièrement rénovés : cuisine et salle de bains refaits de fond en comble avec comptoirs de marbre, planchers de bois flottants, meubles neufs très modernes. Voyez notre galerie de photo pour un bref aperçu.</p></li>
 			    					<li><p>Cuisine toute équipée : réfrigérateur et congélateur, cuisinière avec four électrique, four à micro-ondes, machine à café, vaisselle, coutellerie, verrerie, plats et ustensiles de cuisson et petits articles de cuisine.</p></li>
-			    					<li><p>Télévision couleur à écran plat avec service de câble.</p></li>
+			    					<li><p>TTélévision couleur à écran plat avec service de câble.</p></li>
 			    					<li><p>Connection internet sans fil.</p></li>
-			    					<li><p>Air conditionné</p></li>
+			    					<li><p>Air conditionné.</p></li>
 			    					<li><p>Balcon avec vue panoramique sur le Mont-Royal ou le Fleuve St-Laurent.</p></li>
-			    					<li><p>Service d’entretien ménager hebdomadaire : changement des draps et	serviettes, nettoyage complet de la salle de bain et des planchers.</p></li>
+			    					<li><p>Service d’entretien ménager hebdomadaire : changement des draps et serviettes, nettoyage complet de la salle de bain et des planchers.</p></li>
 			    					<li><p>Accès à la salle d’exercice, aux saunas et à la piscine extérieure (en été).</p></li>
 			    					<li><p>Salle de lavage avec laveuses et sécheuses électriques.</p></li>
 			    					<li><p>Magasin d’aliments au rez-de-chaussée.</p></li>
@@ -101,10 +101,17 @@ get_header(); ?>
 				    		<div class="medium-4 columns">
 				    			<h4>Disponible sur demande :</h4>
 				    			<ul>
-				    				<li><p>Lit de bébé : aucun frais additionnel.</p></li>
-				    				<li><p>Lit Pliant Additionnel pour enfants de moins de 14 ans : aucun frais	additionnel.</p></li>
-				    				<li><p>Lit Pliant Additionnel pour personne	de 14 ans et plus : $100.00 par mois</p></li>
-				    				<li><p>Stationnement intérieur : $150.00 par mois.</p></li>
+				    				<li><p>Lit de bébé: aucun frais additionnel.</p></li>
+				    				<li><p>Lit Pliant Additionnel pour enfants de moins de 14 ans: aucun frais additionnel.</p></li>
+				    				<li><p>Lit Pliant Additionnel pour personne de 14 ans et plus: $100.00 par mois</p></li>
+				    				<li><p>Stationnement intérieur: $150.00 par mois.</p></li>
+				    			</ul>
+
+				    			<h4>Informations supplémentaires:</h4>
+				    			<ul>
+				    				<li><p>Location minimum d’un (1) mois</p></li>
+				    				<li><p>Tous nos tarifs sont en devises canadiennes (CAD).</p></li>
+				    				<li><p>Conformément aux normes de sécurité, le nombre d’usagers est limité par la superficie des appartements.</p></li>
 				    			</ul>
 				    		</div>
 				    	</div>
@@ -146,15 +153,15 @@ get_header(); ?>
 			    				<ul>
 			    					<li>
 			    						<label>Tarifs haute saison :</label>
-			    						<h3>$1,800 - $2,100</h3>
+			    						<h3>$2,400</h3>
 			    					</li>
 			    					<li>
 			    						<label>Tarifs basse saison :</label>
-			    						<h3>$1,350 - $1,650</h3>
+			    						<h3>$1,750</h3>
 			    					</li>
 			    					<li>
 			    						<label>Nombre de personnes :</label>
-			    						<h3>1 à 2 personne(s)</h3>
+			    						<h3>2 adultes et 1 enfant</h3>
 			    					</li>
 			    				</ul>
 			    			</div>
@@ -181,15 +188,15 @@ get_header(); ?>
 			    		<div class="additional-content">
 				    		<div class="medium-8 columns content-left">
 				    			
-			    				<h4>Inclus dans le prix du loyer :</h4>
+			    				<h4>Inclus dans le prix du loyer:</h4>
 			    				<ul>
-			    					<li><p>Tous nos appartements meublés ont été récemment entièrement	rénovés : cuisine et salle de bains refaits de fond en comble avec	comptoirs de marbre, planchers de bois flottants, meubles neufs très modernes. Voyez notre galerie de photo pour un bref aperçu.</p></li>
+			    					<li><p>Tous nos appartements meublés ont été récemment entièrement rénovés : cuisine et salle de bains refaits de fond en comble avec comptoirs de marbre, planchers de bois flottants, meubles neufs très modernes. Voyez notre galerie de photo pour un bref aperçu.</p></li>
 			    					<li><p>Cuisine toute équipée : réfrigérateur et congélateur, cuisinière avec four électrique, four à micro-ondes, machine à café, vaisselle, coutellerie, verrerie, plats et ustensiles de cuisson et petits articles de cuisine.</p></li>
-			    					<li><p>Télévision couleur à écran plat avec service de câble.</p></li>
+			    					<li><p>TTélévision couleur à écran plat avec service de câble.</p></li>
 			    					<li><p>Connection internet sans fil.</p></li>
-			    					<li><p>Air conditionné</p></li>
+			    					<li><p>Air conditionné.</p></li>
 			    					<li><p>Balcon avec vue panoramique sur le Mont-Royal ou le Fleuve St-Laurent.</p></li>
-			    					<li><p>Service d’entretien ménager hebdomadaire : changement des draps et	serviettes, nettoyage complet de la salle de bain et des planchers.</p></li>
+			    					<li><p>Service d’entretien ménager hebdomadaire : changement des draps et serviettes, nettoyage complet de la salle de bain et des planchers.</p></li>
 			    					<li><p>Accès à la salle d’exercice, aux saunas et à la piscine extérieure (en été).</p></li>
 			    					<li><p>Salle de lavage avec laveuses et sécheuses électriques.</p></li>
 			    					<li><p>Magasin d’aliments au rez-de-chaussée.</p></li>
@@ -199,10 +206,17 @@ get_header(); ?>
 				    		<div class="medium-4 columns">
 				    			<h4>Disponible sur demande :</h4>
 				    			<ul>
-				    				<li><p>Lit de bébé : aucun frais additionnel.</p></li>
-				    				<li><p>Lit Pliant Additionnel pour enfants de moins de 14 ans : aucun frais	additionnel.</p></li>
-				    				<li><p>Lit Pliant Additionnel pour personne	de 14 ans et plus : $100.00 par mois</p></li>
-				    				<li><p>Stationnement intérieur : $150.00 par mois.</p></li>
+				    				<li><p>Lit de bébé: aucun frais additionnel.</p></li>
+				    				<li><p>Lit Pliant Additionnel pour enfants de moins de 14 ans: aucun frais additionnel.</p></li>
+				    				<li><p>Lit Pliant Additionnel pour personne de 14 ans et plus: $100.00 par mois</p></li>
+				    				<li><p>Stationnement intérieur: $150.00 par mois.</p></li>
+				    			</ul>
+
+				    			<h4>Informations supplémentaires:</h4>
+				    			<ul>
+				    				<li><p>Location minimum d’un (1) mois</p></li>
+				    				<li><p>Tous nos tarifs sont en devises canadiennes (CAD).</p></li>
+				    				<li><p>Conformément aux normes de sécurité, le nombre d’usagers est limité par la superficie des appartements.</p></li>
 				    			</ul>
 				    		</div>
 				    	</div>
@@ -246,15 +260,15 @@ get_header(); ?>
 			    				<ul>
 			    					<li>
 			    						<label>Tarifs haute saison :</label>
-			    						<h3>$1,800 - $2,100</h3>
+			    						<h3>$2,850</h3>
 			    					</li>
 			    					<li>
 			    						<label>Tarifs basse saison :</label>
-			    						<h3>$1,350 - $1,650</h3>
+			    						<h3>$1,850</h3>
 			    					</li>
 			    					<li>
 			    						<label>Nombre de personnes :</label>
-			    						<h3>1 à 2 personne(s)</h3>
+			    						<h3>2 adultes et 1 enfant</h3>
 			    					</li>
 			    				</ul>
 			    			</div>
@@ -281,15 +295,15 @@ get_header(); ?>
 			    		<div class="additional-content">
 				    		<div class="medium-8 columns content-left">
 				    			
-			    				<h4>Inclus dans le prix du loyer :</h4>
+			    				<h4>Inclus dans le prix du loyer:</h4>
 			    				<ul>
-			    					<li><p>Tous nos appartements meublés ont été récemment entièrement	rénovés : cuisine et salle de bains refaits de fond en comble avec	comptoirs de marbre, planchers de bois flottants, meubles neufs très modernes. Voyez notre galerie de photo pour un bref aperçu.</p></li>
+			    					<li><p>Tous nos appartements meublés ont été récemment entièrement rénovés : cuisine et salle de bains refaits de fond en comble avec comptoirs de marbre, planchers de bois flottants, meubles neufs très modernes. Voyez notre galerie de photo pour un bref aperçu.</p></li>
 			    					<li><p>Cuisine toute équipée : réfrigérateur et congélateur, cuisinière avec four électrique, four à micro-ondes, machine à café, vaisselle, coutellerie, verrerie, plats et ustensiles de cuisson et petits articles de cuisine.</p></li>
-			    					<li><p>Télévision couleur à écran plat avec service de câble.</p></li>
+			    					<li><p>TTélévision couleur à écran plat avec service de câble.</p></li>
 			    					<li><p>Connection internet sans fil.</p></li>
-			    					<li><p>Air conditionné</p></li>
+			    					<li><p>Air conditionné.</p></li>
 			    					<li><p>Balcon avec vue panoramique sur le Mont-Royal ou le Fleuve St-Laurent.</p></li>
-			    					<li><p>Service d’entretien ménager hebdomadaire : changement des draps et	serviettes, nettoyage complet de la salle de bain et des planchers.</p></li>
+			    					<li><p>Service d’entretien ménager hebdomadaire : changement des draps et serviettes, nettoyage complet de la salle de bain et des planchers.</p></li>
 			    					<li><p>Accès à la salle d’exercice, aux saunas et à la piscine extérieure (en été).</p></li>
 			    					<li><p>Salle de lavage avec laveuses et sécheuses électriques.</p></li>
 			    					<li><p>Magasin d’aliments au rez-de-chaussée.</p></li>
@@ -299,10 +313,17 @@ get_header(); ?>
 				    		<div class="medium-4 columns">
 				    			<h4>Disponible sur demande :</h4>
 				    			<ul>
-				    				<li><p>Lit de bébé : aucun frais additionnel.</p></li>
-				    				<li><p>Lit Pliant Additionnel pour enfants de moins de 14 ans : aucun frais	additionnel.</p></li>
-				    				<li><p>Lit Pliant Additionnel pour personne	de 14 ans et plus : $100.00 par mois</p></li>
-				    				<li><p>Stationnement intérieur : $150.00 par mois.</p></li>
+				    				<li><p>Lit de bébé: aucun frais additionnel.</p></li>
+				    				<li><p>Lit Pliant Additionnel pour enfants de moins de 14 ans: aucun frais additionnel.</p></li>
+				    				<li><p>Lit Pliant Additionnel pour personne de 14 ans et plus: $100.00 par mois</p></li>
+				    				<li><p>Stationnement intérieur: $150.00 par mois.</p></li>
+				    			</ul>
+
+				    			<h4>Informations supplémentaires:</h4>
+				    			<ul>
+				    				<li><p>Location minimum d’un (1) mois</p></li>
+				    				<li><p>Tous nos tarifs sont en devises canadiennes (CAD).</p></li>
+				    				<li><p>Conformément aux normes de sécurité, le nombre d’usagers est limité par la superficie des appartements.</p></li>
 				    			</ul>
 				    		</div>
 				    	</div>
@@ -346,15 +367,15 @@ get_header(); ?>
 			    				<ul>
 			    					<li>
 			    						<label>Tarifs haute saison :</label>
-			    						<h3>$1,800 - $2,100</h3>
+			    						<h3>$3,600</h3>
 			    					</li>
 			    					<li>
 			    						<label>Tarifs basse saison :</label>
-			    						<h3>$1,350 - $1,650</h3>
+			    						<h3>$2,500</h3>
 			    					</li>
 			    					<li>
 			    						<label>Nombre de personnes :</label>
-			    						<h3>1 à 2 personne(s)</h3>
+			    						<h3>2 adultes et 3 enfants</h3>
 			    					</li>
 			    				</ul>
 			    			</div>
@@ -381,15 +402,15 @@ get_header(); ?>
 			    		<div class="additional-content">
 				    		<div class="medium-8 columns content-left">
 				    			
-			    				<h4>Inclus dans le prix du loyer :</h4>
+			    				<h4>Inclus dans le prix du loyer:</h4>
 			    				<ul>
-			    					<li><p>Tous nos appartements meublés ont été récemment entièrement	rénovés : cuisine et salle de bains refaits de fond en comble avec	comptoirs de marbre, planchers de bois flottants, meubles neufs très modernes. Voyez notre galerie de photo pour un bref aperçu.</p></li>
+			    					<li><p>Tous nos appartements meublés ont été récemment entièrement rénovés : cuisine et salle de bains refaits de fond en comble avec comptoirs de marbre, planchers de bois flottants, meubles neufs très modernes. Voyez notre galerie de photo pour un bref aperçu.</p></li>
 			    					<li><p>Cuisine toute équipée : réfrigérateur et congélateur, cuisinière avec four électrique, four à micro-ondes, machine à café, vaisselle, coutellerie, verrerie, plats et ustensiles de cuisson et petits articles de cuisine.</p></li>
-			    					<li><p>Télévision couleur à écran plat avec service de câble.</p></li>
+			    					<li><p>TTélévision couleur à écran plat avec service de câble.</p></li>
 			    					<li><p>Connection internet sans fil.</p></li>
-			    					<li><p>Air conditionné</p></li>
+			    					<li><p>Air conditionné.</p></li>
 			    					<li><p>Balcon avec vue panoramique sur le Mont-Royal ou le Fleuve St-Laurent.</p></li>
-			    					<li><p>Service d’entretien ménager hebdomadaire : changement des draps et	serviettes, nettoyage complet de la salle de bain et des planchers.</p></li>
+			    					<li><p>Service d’entretien ménager hebdomadaire : changement des draps et serviettes, nettoyage complet de la salle de bain et des planchers.</p></li>
 			    					<li><p>Accès à la salle d’exercice, aux saunas et à la piscine extérieure (en été).</p></li>
 			    					<li><p>Salle de lavage avec laveuses et sécheuses électriques.</p></li>
 			    					<li><p>Magasin d’aliments au rez-de-chaussée.</p></li>
@@ -399,10 +420,17 @@ get_header(); ?>
 				    		<div class="medium-4 columns">
 				    			<h4>Disponible sur demande :</h4>
 				    			<ul>
-				    				<li><p>Lit de bébé : aucun frais additionnel.</p></li>
-				    				<li><p>Lit Pliant Additionnel pour enfants de moins de 14 ans : aucun frais	additionnel.</p></li>
-				    				<li><p>Lit Pliant Additionnel pour personne	de 14 ans et plus : $100.00 par mois</p></li>
-				    				<li><p>Stationnement intérieur : $150.00 par mois.</p></li>
+				    				<li><p>Lit de bébé: aucun frais additionnel.</p></li>
+				    				<li><p>Lit Pliant Additionnel pour enfants de moins de 14 ans: aucun frais additionnel.</p></li>
+				    				<li><p>Lit Pliant Additionnel pour personne de 14 ans et plus: $100.00 par mois</p></li>
+				    				<li><p>Stationnement intérieur: $150.00 par mois.</p></li>
+				    			</ul>
+
+				    			<h4>Informations supplémentaires:</h4>
+				    			<ul>
+				    				<li><p>Location minimum d’un (1) mois</p></li>
+				    				<li><p>Tous nos tarifs sont en devises canadiennes (CAD).</p></li>
+				    				<li><p>Conformément aux normes de sécurité, le nombre d’usagers est limité par la superficie des appartements.</p></li>
 				    			</ul>
 				    		</div>
 				    	</div>
@@ -419,7 +447,7 @@ get_header(); ?>
 		<div class="large-12 columns">
 			<div class="section-title">Formulaire de location</div>
 			<div class="intro">
-				<p>Veuillez compléter le formulaire ci-joint et l’envoyer, nous confirmerons la disponibilité et le tarif par courriel dès que possible.</p>
+				<p>Veuillez compléter le formulaire ci-joint et l’envoyer. Nous confirmerons la disponibilité et le tarif par courriel dès que possible.</p>
 			</div>
 		</div>
 		<?php echo do_shortcode('[gravityform id="1" title="false" description="false"]'); ?>
@@ -427,16 +455,21 @@ get_header(); ?>
 </div>
 <div class="container">
 	<div id="appartements-bottom">
-		
 		<div class="medium-6 columns">
 			<div class="item">
-				<a href="<?php echo home_url(); ?>/galerie-photos/"><img src="<?php bloginfo('template_url'); ?>/img/appartement3.jpg"></a>
+				<a href="<?php echo home_url(); ?>/galerie-photos/">
+					<h3 class="item-title">Galerie photos</h3>
+					<img src="<?php bloginfo('template_url'); ?>/img/appartement2.jpg">
+				</a>
 			</div>
 		</div>
 		
 		<div class="medium-6 columns">
 			<div class="item">
-				<a href="<?php echo home_url(); ?>/appartements-non-muebles/"><img src="<?php bloginfo('template_url'); ?>/img/appartement2.jpg"></a>
+				<a href="<?php echo home_url(); ?>/appartements-non-muebles/">
+					<h3 class="item-title">Appartements non meublés</h3>
+					<img src="<?php bloginfo('template_url'); ?>/img/appartement3.jpg">
+				</a>
 			</div>
 		</div>
 	</div>

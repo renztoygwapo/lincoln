@@ -90,29 +90,29 @@ get_header(); ?>
 				    		<div class="medium-4 columns">
 			    				<ul>
 			    					<li><p>Électricité</p></li>
-			    					<li><p>Eau chaude</p></li>
-			    					<li><p>Cuisinière et four électriques</p></li>
-			    					<li><p>Saunas</p></li>
-			    					<li><p>Magasin d’aliments au <br> rez-de-chaussée</p></li>
-			    				</ul>
-				    		</div>
-
-				    		<div class="medium-4 columns">
-			    				<ul>
 			    					<li><p>Chauffage</p></li>
+			    					<li><p>Air Climatisé</p></li>
+			    					<li><p>Eau chaude</p></li>
 			    					<li><p>Taxes d’eau</p></li>
-			    					<li><p>Service Internet de base sans-fil</p></li>
-			    					<li><p>Piscine extérieure (en été)</p></li>
-			    					<li><p>Stationnement Intérieur : <br> Bail d’un (1) an : $160.00 <br> par mois</p></li>
 			    				</ul>
 				    		</div>
 
 				    		<div class="medium-4 columns">
 			    				<ul>
-			    					<li><p>Air Climatisé</p></li>
 			    					<li><p>Réfrigérateur</p></li>
+			    					<li><p>Cuisinière et four électriques</p></li>
+			    					<li><p>Service Internet de base sans-fil</p></li>
 			    					<li><p>Salle d’exercice</p></li>
-			    					<li><p>Salle de lavage avec laveuses et <br> sécheuses électriques</p></li>
+			    					<li><p>Saunas</p></li>
+			    				</ul>
+				    		</div>
+
+				    		<div class="medium-4 columns">
+			    				<ul>
+			    					<li><p>Piscine extérieure (en été)</p></li>
+			    					<li><p>Salle de lavage avec laveuses et sécheuses électriques</p></li>
+			    					<li><p>Magasin d’aliments au rez-de-chaussée</p></li>
+			    					<li><p>Stationnement Intérieur : Bail d’un (1) an : $160.00 par mois</p></li>
 			    				</ul>
 				    		</div>
 				    	</div>
@@ -154,7 +154,7 @@ get_header(); ?>
 			    				<ul>
 			    					<li>
 			    						<label>Tarifs au mois :</label>
-			    						<h3>$795 - $895</h3>
+			    						<h3>$895 - $995</h3>
 			    					</li>
 			    					<li>
 			    						<label>Nombre de personnes :</label>
@@ -187,37 +187,38 @@ get_header(); ?>
 			    		<div class="clearfix"></div>
 
 			    		<div class="additional-content">
-
 			    			<div class="large-12 columns">
+			    				<div class="large-12 columns">
 			    				<h4>Inclus dans le loyer :</h4>
+			    			</div>
 			    			</div>
 
 				    		<div class="medium-4 columns">
 			    				<ul>
 			    					<li><p>Électricité</p></li>
-			    					<li><p>Eau chaude</p></li>
-			    					<li><p>Cuisinière et four électriques</p></li>
-			    					<li><p>Saunas</p></li>
-			    					<li><p>Magasin d’aliments au <br> rez-de-chaussée</p></li>
-			    				</ul>
-				    		</div>
-
-				    		<div class="medium-4 columns">
-			    				<ul>
 			    					<li><p>Chauffage</p></li>
+			    					<li><p>Air Climatisé</p></li>
+			    					<li><p>Eau chaude</p></li>
 			    					<li><p>Taxes d’eau</p></li>
-			    					<li><p>Service Internet de base sans-fil</p></li>
-			    					<li><p>Piscine extérieure (en été)</p></li>
-			    					<li><p>Stationnement Intérieur : <br> Bail d’un (1) an : $160.00 <br> par mois</p></li>
 			    				</ul>
 				    		</div>
 
 				    		<div class="medium-4 columns">
 			    				<ul>
-			    					<li><p>Air Climatisé</p></li>
 			    					<li><p>Réfrigérateur</p></li>
+			    					<li><p>Cuisinière et four électriques</p></li>
+			    					<li><p>Service Internet de base sans-fil</p></li>
 			    					<li><p>Salle d’exercice</p></li>
-			    					<li><p>Salle de lavage avec laveuses et <br> sécheuses électriques</p></li>
+			    					<li><p>Saunas</p></li>
+			    				</ul>
+				    		</div>
+
+				    		<div class="medium-4 columns">
+			    				<ul>
+			    					<li><p>Piscine extérieure (en été)</p></li>
+			    					<li><p>Salle de lavage avec laveuses et sécheuses électriques</p></li>
+			    					<li><p>Magasin d’aliments au rez-de-chaussée</p></li>
+			    					<li><p>Stationnement Intérieur : Bail d’un (1) an : $160.00 par mois</p></li>
 			    				</ul>
 				    		</div>
 				    	</div>
@@ -261,7 +262,7 @@ get_header(); ?>
 			    				<ul>
 			    					<li>
 			    						<label>Tarifs au mois :</label>
-			    						<h3>$795 - $895</h3>
+			    						<h3>$995 - $1,350</h3>
 			    					</li>
 			    					<li>
 			    						<label>Nombre de personnes :</label>
@@ -294,37 +295,38 @@ get_header(); ?>
 			    		<div class="clearfix"></div>
 
 			    		<div class="additional-content">
-
 			    			<div class="large-12 columns">
+			    				<div class="large-12 columns">
 			    				<h4>Inclus dans le loyer :</h4>
+			    			</div>
 			    			</div>
 
 				    		<div class="medium-4 columns">
 			    				<ul>
 			    					<li><p>Électricité</p></li>
-			    					<li><p>Eau chaude</p></li>
-			    					<li><p>Cuisinière et four électriques</p></li>
-			    					<li><p>Saunas</p></li>
-			    					<li><p>Magasin d’aliments au <br> rez-de-chaussée</p></li>
-			    				</ul>
-				    		</div>
-
-				    		<div class="medium-4 columns">
-			    				<ul>
 			    					<li><p>Chauffage</p></li>
+			    					<li><p>Air Climatisé</p></li>
+			    					<li><p>Eau chaude</p></li>
 			    					<li><p>Taxes d’eau</p></li>
-			    					<li><p>Service Internet de base sans-fil</p></li>
-			    					<li><p>Piscine extérieure (en été)</p></li>
-			    					<li><p>Stationnement Intérieur : <br> Bail d’un (1) an : $160.00 <br> par mois</p></li>
 			    				</ul>
 				    		</div>
 
 				    		<div class="medium-4 columns">
 			    				<ul>
-			    					<li><p>Air Climatisé</p></li>
 			    					<li><p>Réfrigérateur</p></li>
+			    					<li><p>Cuisinière et four électriques</p></li>
+			    					<li><p>Service Internet de base sans-fil</p></li>
 			    					<li><p>Salle d’exercice</p></li>
-			    					<li><p>Salle de lavage avec laveuses et <br> sécheuses électriques</p></li>
+			    					<li><p>Saunas</p></li>
+			    				</ul>
+				    		</div>
+
+				    		<div class="medium-4 columns">
+			    				<ul>
+			    					<li><p>Piscine extérieure (en été)</p></li>
+			    					<li><p>Salle de lavage avec laveuses et sécheuses électriques</p></li>
+			    					<li><p>Magasin d’aliments au rez-de-chaussée</p></li>
+			    					<li><p>Stationnement Intérieur : Bail d’un (1) an : $160.00 par mois</p></li>
 			    				</ul>
 				    		</div>
 				    	</div>
@@ -368,7 +370,7 @@ get_header(); ?>
 			    				<ul>
 			    					<li>
 			    						<label>Tarifs au mois :</label>
-			    						<h3>$795 - $895</h3>
+			    						<h3>$1,550 - $1,850</h3>
 			    					</li>
 			    					<li>
 			    						<label>Nombre de personnes :</label>
@@ -401,37 +403,38 @@ get_header(); ?>
 			    		<div class="clearfix"></div>
 
 			    		<div class="additional-content">
-
 			    			<div class="large-12 columns">
+			    				<div class="large-12 columns">
 			    				<h4>Inclus dans le loyer :</h4>
+			    			</div>
 			    			</div>
 
 				    		<div class="medium-4 columns">
 			    				<ul>
 			    					<li><p>Électricité</p></li>
-			    					<li><p>Eau chaude</p></li>
-			    					<li><p>Cuisinière et four électriques</p></li>
-			    					<li><p>Saunas</p></li>
-			    					<li><p>Magasin d’aliments au <br> rez-de-chaussée</p></li>
-			    				</ul>
-				    		</div>
-
-				    		<div class="medium-4 columns">
-			    				<ul>
 			    					<li><p>Chauffage</p></li>
+			    					<li><p>Air Climatisé</p></li>
+			    					<li><p>Eau chaude</p></li>
 			    					<li><p>Taxes d’eau</p></li>
-			    					<li><p>Service Internet de base sans-fil</p></li>
-			    					<li><p>Piscine extérieure (en été)</p></li>
-			    					<li><p>Stationnement Intérieur : <br> Bail d’un (1) an : $160.00 <br> par mois</p></li>
 			    				</ul>
 				    		</div>
 
 				    		<div class="medium-4 columns">
 			    				<ul>
-			    					<li><p>Air Climatisé</p></li>
 			    					<li><p>Réfrigérateur</p></li>
+			    					<li><p>Cuisinière et four électriques</p></li>
+			    					<li><p>Service Internet de base sans-fil</p></li>
 			    					<li><p>Salle d’exercice</p></li>
-			    					<li><p>Salle de lavage avec laveuses et <br> sécheuses électriques</p></li>
+			    					<li><p>Saunas</p></li>
+			    				</ul>
+				    		</div>
+
+				    		<div class="medium-4 columns">
+			    				<ul>
+			    					<li><p>Piscine extérieure (en été)</p></li>
+			    					<li><p>Salle de lavage avec laveuses et sécheuses électriques</p></li>
+			    					<li><p>Magasin d’aliments au rez-de-chaussée</p></li>
+			    					<li><p>Stationnement Intérieur : Bail d’un (1) an : $160.00 par mois</p></li>
 			    				</ul>
 				    		</div>
 				    	</div>
@@ -448,7 +451,7 @@ get_header(); ?>
 		<div class="large-12 columns">
 			<div class="section-title">Formulaire de location</div>
 			<div class="intro">
-				<p>Veuillez compléter le formulaire ci-joint et l’envoyer, nous confirmerons la disponibilité et le tarif par courriel dès que possible.</p>
+				<p>Veuillez compléter le formulaire ci-joint et l’envoyer. Nous confirmerons la disponibilité et le tarif par courriel dès que possible.</p>
 			</div>
 		</div>
 		<?php echo do_shortcode('[gravityform id="3" title="false" description="false"]'); ?>
@@ -458,12 +461,19 @@ get_header(); ?>
 	<div id="appartements-bottom">
 		<div class="medium-6 columns">
 			<div class="item">
-				<a href="<?php echo home_url(); ?>/galerie-photos/"><img src="<?php bloginfo('template_url'); ?>/img/appartement3.jpg"></a>
+				<a href="<?php echo home_url(); ?>/galerie-photos/">
+					<h3 class="item-title">Galerie photos</h3>
+					<img src="<?php bloginfo('template_url'); ?>/img/appartement2.jpg">
+				</a>
 			</div>
 		</div>
+		
 		<div class="medium-6 columns">
 			<div class="item">
-				<a href="<?php echo home_url(); ?>/appartements-muebles/"><img src="<?php bloginfo('template_url'); ?>/img/appartement1.jpg"></a>
+				<a href="<?php echo home_url(); ?>/appartements-muebles/">
+					<h3 class="item-title">Appartements meublés</h3>
+					<img src="<?php bloginfo('template_url'); ?>/img/appartement1.jpg">
+				</a>
 			</div>
 		</div>
 	</div>
