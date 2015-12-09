@@ -884,7 +884,7 @@ body > footer{
 body > footer *{
 	font-family: 'Martel';
 	font-weight: 300;
-	font-size: 12px;
+	font-size: 11px;
 	color: #ede9cf;
 }
 body > footer .footer-inner{
@@ -908,6 +908,9 @@ body > footer .poweredby{
 }
 body > footer .poweredby span{
 	margin-right: 4px;
+}
+.poweredby img{
+	width: 80px;
 }
 /* -------------------------------------------------- 
 MEDIA QUERIES

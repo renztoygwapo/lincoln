@@ -17,7 +17,7 @@
 			<div class="medium-4 columns">
 				<div class="poweredby">
 					<span>Conception du site web par</span>
-					<a href="http://www.codespark.ca/" target="_blank"><img src="<?php bloginfo('template_url'); ?>/img/codespark.png"></a>
+					<a href="http://codespark.ca/" target="_blank"><img src="<?php bloginfo('template_url'); ?>/img/codespark.png"></a>
 				</div>
 			</div>
 		</div>
