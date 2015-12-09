@@ -789,8 +789,11 @@ CONTACT & GRAVITY FORMS
 	display: none;
 }
 #contact-map-wrapper .container{
-	position: relative;
-	height: 100%;
+	position: absolute;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
 }
 #contact-map-wrapper #map{
 	position: relative;
