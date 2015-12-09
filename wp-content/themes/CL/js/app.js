@@ -39,5 +39,19 @@ jQuery(document).ready(function($){
 		return false;
 	});
 
+	$('ul.tabs li a').on('click',function(e){
+		e.preventDefault();
+		$('ul.tabs li a').parent().removeClass('active');
+		$(this).parent().addClass('active');
+
+		if($(this).attr("href") == '#plan'){
+			$('#map').show();
+			$('#subway').hide();
+		}else{
+			$('#map').hide();
+			$('#subway').show();
+		}
+	})
+
 });
 

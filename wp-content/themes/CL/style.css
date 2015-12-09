@@ -118,7 +118,7 @@ CAROUSEL
 	background: url('img/next-chevron.jpg') no-repeat;
     height: 50px;
     width: 50px;
-    left: 50px;
+    left: 48px;
     bottom: 0;
 }
 .owl-carousel.accordion-carousel .owl-controls .owl-prev{
@@ -776,11 +776,15 @@ CONTACT & GRAVITY FORMS
 }
 #contact-map-wrapper{
 	height: 828px;
+	background: #F5F5EB;
+	position: relative;
 }
 #contact-map-wrapper #subway{
 	background: url('img/map-subway.jpg') no-repeat left bottom;
 	background-size: cover;
-	height: 828px;
+	height: 100%;
+	width: 100%;
+	position: absolute;
 	display: none;
 }
 #contact-map-wrapper #map{
@@ -813,18 +817,18 @@ CONTACT & GRAVITY FORMS
 	font-size: 17px;
 	font-weight: 700;
 }
-.page-template-contact ul#tab{
+.page-template-contact ul.tabs{
 	list-style: none;
 	margin: 0px;
 	border-bottom: 2px solid #f4f2e2;
 	display: inline-block;
 }
-.page-template-contact ul#tab li{
+.page-template-contact ul.tabs li{
 	display: inline-block;
 	padding: 0px 20px;
 	height: 50px;
 }
-.page-template-contact ul#tab li a{
+.page-template-contact ul.tabs li a{
 	font-size: 12px;
 	font-family: 'Roboto Condensed';
 	color: #474c55;
@@ -835,7 +839,7 @@ CONTACT & GRAVITY FORMS
 	line-height: 50px;
 	display: block;
 }
-.page-template-contact ul#tab li.active a{
+.page-template-contact ul.tabs li.active a{
 	border-bottom: 2px solid #8c8e8d;
 }
 .gform_wrapper textarea.large{
@@ -962,6 +966,10 @@ FOR MOBILE ONLY
 	#map{
 		position: relative;
 		height: 220px;
+	}
+	#contact-map-wrapper #subway{
+		height: 340px;
+		background-position: 0 34px;
 	}
 	#appartements-bottom{
 		padding: 20px 0 0;
@@ -1228,7 +1236,7 @@ FOR TABLET AND DESKTOP
 		height: auto;
 	}
 	.top-bar-section > ul > li{
-		padding: 0 10px;
+		padding: 0 17px;
 	}
 	.top-bar-section ul li > a{
 		font-family: 'Roboto Condensed', sans-serif;
@@ -1425,6 +1433,11 @@ FOR DESKTOP ONLY
 		text-align: center;
 	}
 
+}
+@media only screen and (max-width: 1086px) { 
+	.top-bar-section > ul > li {
+	    padding: 0 10px;
+	}
 }
 
 @media only screen and (max-width: 767px) { 

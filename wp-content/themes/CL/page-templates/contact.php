@@ -5,12 +5,14 @@ get_header(); ?>
 
 <div id="contact-map-wrapper">
   <div id="map"></div>
-  <div id="subway"></div>
+  <div class="container">
+    <div id="subway"></div>
+  </div>
 </div>
 <div class="tab show-for-small-only text-center">
-  <ul id="tab">
-    <li class="active"><a href="#">Plan</a></li>
-    <li><a href="#">Métro</a></li>
+  <ul class="tabs">
+    <li class="active"><a href="#plan">Plan</a></li>
+    <li><a href="#metro">Métro</a></li>
   </ul>
 </div>
 
@@ -38,9 +40,9 @@ get_header(); ?>
               Fax :  514 931-7272</p>
             </div>
             <div class="medium-5 columns hide-for-small-only">
-              <ul id="tab">
-                <li class="active"><a href="#">Plan</a></li>
-                <li><a href="#">Métro</a></li>
+              <ul class="tabs">
+                <li class="active"><a href="#plan">Plan</a></li>
+                <li><a href="#metro">Métro</a></li>
               </ul>
             </div>
           </div>
