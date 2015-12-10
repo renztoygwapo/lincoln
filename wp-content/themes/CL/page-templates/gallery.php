@@ -1,9 +1,8 @@
 <?php 
 //Template Name: Gallery
 get_header(); ?>
-<div class="container">
-	<div class="gallery-banner" style="background-image: url(<?php bloginfo('template_url'); ?>/img/gallery-banner.jpg)"></div>
-</div>
+
+<div class="gallery-banner container" style="background-image: url(<?php bloginfo('template_url'); ?>/img/gallery-banner.jpg)"></div>
 
 <div class="container">
 	<div id="gallery">

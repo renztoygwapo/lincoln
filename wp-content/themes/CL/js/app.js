@@ -6,7 +6,6 @@ jQuery(document).ready(function($){
 	    stopOnHover : true,
 	    navigation:true,
 	    singleItem : true,
-	    autoHeight : true,
 	    navigationText : ''
 	});
 
@@ -23,6 +22,11 @@ jQuery(document).ready(function($){
 	});
 	
 	$('#appartements-accordion .accordion-navigation').first().addClass('active');
+
+	$('#appartements-accordion').on('toggled',function (event, tab){
+		$('html,body').animate({ scrollTop: $('#'+tab[0]['id']).offset().top}, 800);
+		return false;
+	});
 
 	$(window).scroll(function() {
         var scroll = $(window).scrollTop();
