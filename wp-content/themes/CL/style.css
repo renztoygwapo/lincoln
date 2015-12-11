@@ -493,6 +493,9 @@ GALLERY
 #gallery .gallery-item{
 	background: #fff;
 }
+#gallery .gallery-item img{
+	width: 100%;
+}
 #gallery .gallery-item .gallery-caption{
     max-width: 520px;
     margin: 0 auto;
@@ -551,6 +554,9 @@ REDIRECTION
 }
 #appartements-bottom .item{
 	position: relative;
+}
+#appartements-bottom .item img{
+	width: 100%;
 }
 #appartements-bottom .item h3.item-title{
 	position: absolute;
@@ -977,6 +983,7 @@ FOR MOBILE ONLY
 	}
 	.top-bar-section ul li{
 		background: rgba(52,56,65,.95);
+		padding: 0px !important;
 	}
 	.top-bar-section ul li > a{
 		color: #ede9cf;

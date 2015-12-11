@@ -453,8 +453,8 @@ get_header(); ?>
 		<?php echo do_shortcode('[gravityform id="1" title="false" description="false"]'); ?>
 	</div>
 </div>
-<div class="container">
-	<div id="appartements-bottom">
+<div id="appartements-bottom">
+	<div class="container">
 		<div class="medium-6 columns">
 			<div class="item">
 				<a href="<?php echo home_url(); ?>/galerie-photos/">
@@ -474,6 +474,7 @@ get_header(); ?>
 		</div>
 	</div>
 </div>
+
 <?php endwhile; ?> 
 
 <?php get_footer(); ?>
