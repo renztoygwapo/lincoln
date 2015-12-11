@@ -102,6 +102,3 @@
 		</div>
 	</div>
 </header>
-
-<!-- Start the main container -->
-<div class="main" role="document">

@@ -1,13 +1,10 @@
-
-</div><!-- Container End -->
-
 <footer>
 	<div class="container footer-inner">
 		<div class="row">
 			<div class="medium-8 columns">
 				<div class="copyright">
 					<ul>
-						<li><a href="<?php echo home_url(); ?>">&copy; <?php echo date('Y'); ?> Château Lincoln</a></li>
+						<li>&copy; <?php echo date('Y'); ?> <a href="<?php echo home_url(); ?>">Château Lincoln</a></li>
 						<li><a href="#"><span>-</span>Tous droit réservés</a></li>
 						<li><a href="#"><span>-</span>Termes</a></li>
 						<li><a href="#"><span>-</span>Confidentialité</a></li>

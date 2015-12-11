@@ -134,8 +134,9 @@ function showGoogleMaps() {
         zoomControl: false,
         scaleControl: false,
         scrollwheel: false,
-        disableDoubleClickZoom: true,
-        mapTypeControl: false
+        disableDoubleClickZoom: false,
+        mapTypeControl: false,
+        draggable: false,
     };
  
     map = new google.maps.Map(document.getElementById('map'),

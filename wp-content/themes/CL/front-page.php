@@ -1,18 +1,16 @@
 <?php get_header(); ?>
 
 <div id="slider">
-
 	<div class="owl-carousel home-carousel">
-    	<div class="item" style="background-image :url(<?php bloginfo('template_url'); ?>/img/slide1.jpg)"></div>
-    	<div class="item" style="background-image :url(<?php bloginfo('template_url'); ?>/img/slide1.jpg)"></div>
+    	<div class="item"><img src="<?php bloginfo('template_url'); ?>/img/slide1.jpg"></div>
+    	<div class="item"><img src="<?php bloginfo('template_url'); ?>/img/slide1.jpg"></div>
 	</div>
-
 </div>
 
 
-<div id="map-wrapper">
+<div id="map-wrapper"  data-equalizer>
     <div class="container">
-        <div class="box">
+        <div class="box" data-equalizer-watch>
         	<div class="box-content">
         		<h1 class="box-heading">Château Lincoln</h1>
 
@@ -25,7 +23,7 @@
         	</div>
         </div>
     </div>
-    <div id="map"></div>
+      <div id="map" data-equalizer-watch></div>
 </div>
 
 
@@ -110,22 +108,26 @@ function showGoogleMaps() {
         mapTypeId: google.maps.MapTypeId.ROADMAP,
         center: latLng,
         zoomControl: false,
+        draggable: false,
         scaleControl: false,
         scrollwheel: false,
-        disableDoubleClickZoom: true,
+        disableDoubleClickZoom: false,
         mapTypeControl: false
     };
  
     map = new google.maps.Map(document.getElementById('map'),
         mapOptions);
- 	
- 	  if(jQuery(window).width() > 641 && jQuery(window).width() < 767){
+    if(jQuery(window).width() > 767 && jQuery(window).width() < 1024){
+      var myIcon = new google.maps.MarkerImage("<?php bloginfo('template_url'); ?>/img/map-marker.png", new google.maps.Size(50, 59), null, new google.maps.Point(250, -120));
+    }
+
+ 	  else if(jQuery(window).width() > 641 && jQuery(window).width() < 767){
       var myIcon = new google.maps.MarkerImage("<?php bloginfo('template_url'); ?>/img/map-marker.png", new google.maps.Size(50, 59), null, new google.maps.Point(50, 40));
     }
     else if(jQuery(window).width() < 641){
       var myIcon = new google.maps.MarkerImage("<?php bloginfo('template_url'); ?>/img/map-marker.png", new google.maps.Size(50, 59), null, new google.maps.Point(14, 40));
     }else{
-      var myIcon = new google.maps.MarkerImage("<?php bloginfo('template_url'); ?>/img/map-marker.png", new google.maps.Size(50, 59), null, new google.maps.Point(380, 60));
+      var myIcon = new google.maps.MarkerImage("<?php bloginfo('template_url'); ?>/img/map-marker.png", new google.maps.Size(50, 59), null, new google.maps.Point(380, -120));
     }
     
     // Show the default red marker at the location

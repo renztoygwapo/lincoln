@@ -374,7 +374,7 @@ get_header(); ?>
 			    					</li>
 			    					<li>
 			    						<label>Nombre de personnes :</label>
-			    						<h3>1 à 2 personne(s)</h3>
+			    						<h3>2 adultes et 3 enfants</h3>
 			    					</li>
 			    					<li>
 			    						<label>Bail :</label>
