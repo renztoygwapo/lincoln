@@ -2,9 +2,9 @@
 //Template Name: Gallery
 get_header(); ?>
 
-<div class="gallery-banner container" style="background-image: url(<?php bloginfo('template_url'); ?>/img/gallery-banner.jpg)"></div>
+<div class="gallery-banner" style="background-image: url(<?php bloginfo('template_url'); ?>/img/gallery-banner.jpg)"></div>
 
-<div class="container">
+<div class="">
 	<div id="gallery">
 		
 		<div class="medium-6 columns nopadding grid-item">
@@ -74,14 +74,23 @@ get_header(); ?>
 	</div>
 
 	<div id="appartements-bottom">
-		<div class="medium-6 columns">
-			<div class="item">
-				<a href="<?php echo home_url(); ?>/appartements-muebles/"><img src="<?php bloginfo('template_url'); ?>/img/appartement1.jpg"></a>
+		<div class="container">
+			<div class="medium-6 columns">
+				<div class="item">
+					<a href="<?php echo home_url(); ?>/galerie-photos/">
+						<h3 class="item-title">Galerie photos</h3>
+						<img src="<?php bloginfo('template_url'); ?>/img/appartement2.jpg">
+					</a>
+				</div>
 			</div>
-		</div>
-		<div class="medium-6 columns">
-			<div class="item">
-				<a href="<?php echo home_url(); ?>/appartements-non-muebles/"><img src="<?php bloginfo('template_url'); ?>/img/appartement2.jpg"></a>
+			
+			<div class="medium-6 columns">
+				<div class="item">
+					<a href="<?php echo home_url(); ?>/appartements-non-muebles/">
+						<h3 class="item-title">Appartements non meublés</h3>
+						<img src="<?php bloginfo('template_url'); ?>/img/appartement3.jpg">
+					</a>
+				</div>
 			</div>
 		</div>
 	</div>
